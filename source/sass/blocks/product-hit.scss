@@ -1,0 +1,22 @@
+.product-hit__tittle {
+  font-weight: $font-weight-bold;
+  font-size: 25px;
+  line-height: 30px;
+}
+
+.product-hit__legend {
+  font-weight: $font-weight-bold;
+  line-height: 20px;
+  color: $secondary-color;
+}
+
+.product-hit__desc {
+  font-weight: $font-weight-normal;
+  font-size: 15px;
+  color: $main-color;
+}
+
+.product-hit__price {
+  font-weight: $font-weight-bold;
+  color: $main-color;
+}
