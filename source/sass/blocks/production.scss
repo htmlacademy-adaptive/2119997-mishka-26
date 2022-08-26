@@ -1,0 +1,42 @@
+.production {
+  display: grid;
+  width: 260px;
+  margin: 0 auto;
+  padding: 30px 0 58px;
+
+  @media (min-width: $tablet-width) {
+    width: 668px;
+    padding: 53px 0 64px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1050px;
+    grid-template-columns: 682px 367px;
+    grid-template-areas:  "video production__tittle"
+                          "video production__descripion"
+                          "video production__button";
+    padding: 57px 0 105px;
+  }
+}
+
+.production__tittle {
+  grid-area: production__tittle;
+}
+
+.production__video {
+  position: relative;
+  width: 100%;
+  grid-area: video;
+
+  @media (min-width: $tablet-width) {
+    order: -1;
+  }
+
+  @media (min-width: $desktop-width) {
+
+  }
+}
+
+.production__descripion {
+  grid-area: production__descripion;
+}

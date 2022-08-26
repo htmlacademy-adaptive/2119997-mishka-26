@@ -1,0 +1,83 @@
+.main-header {
+  position: relative;
+  background-color: $white;
+  color: $black;
+  width: 260px;
+  margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 45% 55%;
+    grid-template-areas:  "logo user-list"
+                          "site-list delivery";
+    width: 668px;
+    margin: 0 auto;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: 40% 20% 40%;
+    grid-template-areas:  "site-list logo user-list"
+                          "trade-list trade-list delivery";
+    width: 1050px;
+    margin: 0 auto;
+  }
+}
+
+.main-header__logo {
+  display: block;
+  grid-area: logo;
+  padding: 22px 87px;
+
+  @media (min-width: $tablet-width) {
+    margin-left: 0;
+  }
+}
+
+.main-header__burger-menu {
+  position: absolute;
+  top: 15px;
+  right: 0;
+  padding: 20px;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}
+
+.site-list {
+  grid-area: site-list;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: start;
+  }
+}
+
+.user-list {
+  grid-area: user-list;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: end;
+  }
+}
+
+.trade-list {
+  display: none;
+  grid-area: trade-list;
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    justify-content: start;
+  }
+}
+
+.main-header__delivery {
+  display: none;
+  grid-area: delivery;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+  }
+}

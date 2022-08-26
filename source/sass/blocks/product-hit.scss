@@ -1,19 +1,67 @@
+ .product-hit__wrapper {
+  width: 260px;
+
+  padding: 30px 0 35px;
+  margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 290px 165px 125px;
+    column-gap: 42px;
+    grid-template-areas:  "product-hit__tittle product-hit__tittle product-hit__legend"
+                          "product-hit__desc image image"
+                          "product-hit__list image image"
+                          "product-hit__order image image";
+    width: 668px;
+    margin: 0 auto;
+    padding: 50px 0 69px;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: 130px 290px 525px;
+    column-gap: 43px;
+    grid-template-areas:  "product-hit__legend product-hit__tittle image"
+                          "product-hit__legend product-hit__desc image"
+                          "product-hit__legend product-hit__list image"
+                          "product-hit__legend product-hit__order image";
+
+    width: 1050px;
+    margin: 0 auto;
+    padding: 70px 0 95px;
+  }
+}
+
 .product-hit__tittle {
+  grid-area: product-hit__tittle;
   font-weight: $font-weight-bold;
   font-size: 25px;
   line-height: 30px;
 }
 
 .product-hit__legend {
+  grid-area: product-hit__legend;
   font-weight: $font-weight-bold;
   line-height: 20px;
   color: $secondary-color;
 }
 
 .product-hit__desc {
+  grid-area: product-hit__desc;
   font-weight: $font-weight-normal;
   font-size: 15px;
   color: $main-color;
+}
+
+.product-hit__list {
+  grid-area: product-hit__list;
+}
+
+.product-hit__img-wrapper {
+  grid-area: image;
+}
+
+.product-hit__order {
+  grid-area: product-hit__order;
 }
 
 .product-hit__price {

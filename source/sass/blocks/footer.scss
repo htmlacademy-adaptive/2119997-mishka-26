@@ -1,0 +1,26 @@
+.main-footer {
+  background-color: $gray;
+}
+
+.main-footer__logo {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+  }
+}
+
+.main-footer__wrapper {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 668px;
+    margin: 0 auto;
+    min-height: 143px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1050px;
+  }
+}
