@@ -1,7 +1,34 @@
+.contacts__wrapper {
+  padding: 45px 0 40px;
+  width: 260px;
+  margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    padding: 70px 0 55px;
+    margin: 0 auto;
+    width: 668px;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: 40% 60%;
+    grid-template-areas:  "contacts__tittle contacts__map"
+                          "contacts__list contacts__map"
+                          "contacts__write contacts__map";
+    width: 1050px;
+    padding: 70px 0 105px;
+  }
+}
+
 .contacts__tittle {
+  grid-area: contacts__tittle;
   font-weight: $font-weight-bold;
   font-size: 25px;
   line-height: 30px;
+}
+
+.contacts__list {
+  grid-area: contacts__list;
 }
 
 .contacts__name {
@@ -14,4 +41,12 @@
   font-weight: $font-weight-normal;
   font-size: 14px;
   line-height: 30px;
+}
+
+.contacts__map {
+  grid-area: contacts__map;
+}
+
+.contacts__write {
+  grid-area: contacts__write;
 }
