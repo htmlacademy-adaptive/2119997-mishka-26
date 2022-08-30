@@ -36,6 +36,7 @@
   font-weight: $font-weight-bold;
   font-size: 25px;
   line-height: 30px;
+  margin: 0;
 }
 
 .product-hit__legend {
@@ -43,6 +44,7 @@
   font-weight: $font-weight-bold;
   line-height: 20px;
   color: $secondary-color;
+  margin: 0;
 }
 
 .product-hit__desc {
@@ -50,6 +52,7 @@
   font-weight: $font-weight-normal;
   font-size: 15px;
   color: $main-color;
+  margin: 17px 0 28px;
 }
 
 .product-hit__list {

@@ -27,40 +27,76 @@
 .main-header__logo {
   display: block;
   grid-area: logo;
-  padding: 22px 87px;
+  text-align: center;
+  margin: 22px auto;
 
   @media (min-width: $tablet-width) {
-    margin-left: 0;
+    text-align: start;
   }
+
+  @media (min-width: $desktop-width) {
+    text-align: center;
+  }
+}
+
+.main-header__logo img {
+  width: 86px;
+  height: 35px;
 }
 
 .main-header__burger-menu {
   position: absolute;
-  top: 15px;
+  top: 0;
   right: 0;
-  padding: 20px;
+  width: 20px;
+  height: 14px;
+  cursor: pointer;
+  border: none;
+  background-color: $white;
 
   @media (min-width: $tablet-width) {
     display: none;
   }
 }
 
-.site-list {
-  grid-area: site-list;
+.main-header__burger-menu--closed::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 20px;
+  height: 2px;
+  transition: 0.3s;
+  background-color: $black;
+  box-shadow: 0 4px 0 0 $black,
+              0 8px 0 0 $black;
+}
 
-  @media (min-width: $tablet-width) {
-    display: flex;
-    justify-content: start;
+.main-header__burger-menu--opened {
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    top: 5px;
+    right: 0;
+    width: 22px;
+    height: 2px;
+    background-color: $black;
+  }
+
+  &::before {
+    transform: rotate(45deg);
+  }
+
+  &::after {
+    transform: rotate(-45deg);
   }
 }
 
-.user-list {
-  grid-area: user-list;
-
-  @media (min-width: $tablet-width) {
-    display: flex;
-    justify-content: end;
-  }
+.main-header__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
 
 .trade-list {
