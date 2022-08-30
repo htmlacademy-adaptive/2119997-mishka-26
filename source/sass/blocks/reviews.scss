@@ -1,18 +1,18 @@
 .reviews {
-  width: 260px;
+  width: 320px;
   margin: 0 auto;
-  padding: 28px 0 45px;
+  padding: 0 30px;
 
   @media (min-width: $tablet-width) {
-    width: 668px;
+    width: 768px;
     margin: 0 auto;
-    padding: 82px 0 131px;
+    padding: 0 50px;
   }
 
   @media (min-width: $desktop-width) {
     width: 1050px;
     margin: 0 auto;
-    padding: 90px 0 161px;
+    padding: 0 50px;
   }
 }
 
@@ -24,6 +24,7 @@
     grid-template-columns: 50% 50%;
     grid-template-areas:  "reviews__tittle reviews__write"
                           "reviews__list reviews__list";
+    align-items: baseline;
   }
 }
 
@@ -32,6 +33,11 @@
   font-weight: $font-weight-bold;
   font-size: 25px;
   line-height: 30px;
+  margin: 0;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 82px;
+  }
 }
 
 .reviews__list {
@@ -39,15 +45,30 @@
   position: relative;
 }
 
+.reviews__item {
+  margin: 0;
+}
+
+.reviews__autor-info {
+  margin-bottom: 30px;
+}
+
 .reviews__text {
   font-weight: $font-weight-normal;
   font-size: 15px;
   line-height: 30px;
   color: $main-color;
+  margin-bottom: 33px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 61px;
+  }
 }
 
 .reviews__autor-name {
   font-weight: $font-weight-bold;
+  color: $black;
+  font-style: normal;
 }
 
 .reviews__autor-email {
@@ -59,6 +80,7 @@
 
 .reviews__arrow {
   display: flex;
+  margin-bottom: 38px;
 
   @media (min-width: $tablet-width) {
     position: absolute;
@@ -68,4 +90,10 @@
 
 .reviews__write {
   grid-area: reviews__write;
+  margin-bottom: 45px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 82px;
+    margin-bottom: 40px;
+  }
 }
