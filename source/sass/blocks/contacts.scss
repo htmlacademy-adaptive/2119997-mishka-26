@@ -4,9 +4,9 @@
   margin: 0 auto;
 
   @media (min-width: $tablet-width) {
-    padding: 70px 0 55px;
+    padding: 0 50px;
     margin: 0 auto;
-    width: 668px;
+    width: 768px;
   }
 
   @media (min-width: $desktop-width) {
@@ -15,8 +15,8 @@
     grid-template-areas:  "contacts__tittle contacts__map"
                           "contacts__list contacts__map"
                           "contacts__write contacts__map";
-    width: 1050px;
-    padding: 70px 0 105px;
+    width: 1150px;
+    padding: 0 50px;
   }
 }
 

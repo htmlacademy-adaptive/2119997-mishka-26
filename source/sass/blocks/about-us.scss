@@ -1,20 +1,24 @@
 .about-us {
-  width: 260px;
-
+  width: 320px;
   margin: 0 auto;
-  padding: 30px 0 30px;
+  padding: 0 30px;
 
   @media (min-width: $tablet-width) {
-    width: 668px;
-
+    width: 768px;
     margin: 0 auto;
-    padding: 55px 0 85px;
+    padding: 0 50px;
   }
 
   @media (min-width: $desktop-width) {
-    width: 1050px;
-    padding: 70px 0 90px;
+    width: 1150px;
     margin: 0 auto;
+    padding: 0 50px;
+  }
+}
+
+.about-us__wrapper {
+  @media (min-width: $desktop-width) {
+    padding: 0 175px;
   }
 }
 
@@ -22,6 +26,8 @@
   font-weight: $font-weight-bold;
   font-size: 25px;
   line-height: 30px;
+  margin: 0;
+  padding: 31px 0 28px;
 }
 
 .about-us__list {
@@ -29,7 +35,8 @@
   padding: 0;
   list-style-type: none;
   display: grid;
-  row-gap: 110px;
+  row-gap: 32px;
+  padding-bottom: 58px;
 
   @media (min-width: $tablet-width) {
     grid-template-columns: 325px 325px;
@@ -38,11 +45,79 @@
 
   @media (min-width: $desktop-width) {
     column-gap: 25px;
-    padding-left: 175px;
   }
 }
 
 .about-us__item {
+  position: relative;
   font-weight: $font-weight-bold;
+  font-size: 17px;
   line-height: 20px;
+  padding-top: 54px;
+
+  &--materials svg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 33px;
+    height: 38px;
+  }
+
+  &--style svg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 47px;
+    height: 27px;
+  }
+
+  &--like svg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 34px;
+    height: 27px;
+  }
+
+  &--manual svg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 35px;
+    height: 34px;
+  }
+
+  &--support svg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 55px;
+    height: 23px;
+  }
+
+  &--box svg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 33px;
+    height: 32px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .about-us__item:nth-child(1) {
+    order: -4;
+  }
+
+  .about-us__item:nth-child(4) {
+    order: -3;
+  }
+
+  .about-us__item:nth-child(2) {
+    order: -2;
+  }
+
+  .about-us__item:nth-child(5) {
+    order: -1;
+  }
 }
