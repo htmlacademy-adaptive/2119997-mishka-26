@@ -12,16 +12,4 @@
   }
 }
 
-.hero__tittle {
-  width: 260px;
-  margin: 0 auto;
-  text-align: center;
 
-  @media (min-width: $tablet-width) {
-    width: 668px;
-  }
-
-  @media (min-width: $desktop-width) {
-    width: 1050px;
-  }
-}
