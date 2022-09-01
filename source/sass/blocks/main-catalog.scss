@@ -2,7 +2,6 @@
   width: 260px;
 
   margin: 0 auto;
-  padding: 70px 0 31px;
 
   @media (min-width: $tablet-width) {
     width: 668px;
@@ -51,4 +50,7 @@
   font-size: 19px;
   color: $white;
   text-decoration: none;
+  padding-top: 24px;
+  padding-bottom: 31px;
+  width: 130px;
 }

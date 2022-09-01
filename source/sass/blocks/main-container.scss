@@ -1,4 +1,19 @@
-.main-container__tittle {
+.main-container__header {
+  background-color: $gray;
+  background-image: url("../../img/hero-mobile@2x\ 1.jpg");
+  background-repeat: no-repeat;
+  background-position: 50% 0;
+
+  @media (min-width: $tablet-width) {
+    background-size: cover;
+  }
+
+  @media (min-width: $desktop-width) {
+
+  }
+}
+
+.hero__tittle-index {
   font-weight: $font-weight-bold;
   font-size: 27px;
   line-height: 30px;
