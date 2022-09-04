@@ -1,0 +1,88 @@
+.oder__text {
+  font-size: 13px;
+  margin: 13px 0 29px;
+}
+
+.oder__group {
+  padding: 0;
+  margin: 0;
+  border: none;
+  margin-bottom: 34px;
+}
+
+.oder__tittle {
+  color: $secondary-color;
+  text-transform: uppercase;
+  line-height: 16px;
+  margin-bottom: 30px;
+}
+
+.oder__list {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+.oder__item {
+  font-weight: $font-weight-bold;
+  line-height: 18px;
+  color: $black;
+  margin-bottom: 13px;
+
+    &--color {
+    margin-bottom: 23px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
+
+.control {
+  display: flex;
+  align-items: center;
+}
+
+.control__mark {
+  position: relative;
+  display: block;
+  box-sizing: border-box;
+  cursor: pointer;
+  width: 38px;
+  height: 38px;
+  background-color: transparent;
+  border: 2px solid $main-color;
+  margin-right: 23px;
+
+  &:hover {
+    border-color: $secondary-color;
+  }
+
+  &:active {
+    border-color: $black;
+    opacity: 0.3;
+  }
+
+  &--radio {
+    border-radius: 50%;
+  }
+}
+
+.control__input[type="radio"]:checked+.control__mark::before {
+  position: absolute;
+  content: "";
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background-color: $secondary-color;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+}
+
+.control__input[type="checkbox"]:checked+.control__mark {
+  background-image: url("../img/icon/icon-cheked.svg");
+  background-position: center;
+  background-size: 23px 16px;
+  background-repeat: no-repeat;
+}

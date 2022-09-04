@@ -59,17 +59,18 @@
         <h2 class="visually-hidden">Форма заказа</h2>
         <p class="oder__text">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
         <form class="oder__form" action="https://echo.htmlacademy.ru/" method="get">
-          <fieldset class="form__group">
-            <legend class="form__tittle">Тип</legend>
-            <ul class="form__list">
-              <li class="form__item">
+          <fieldset class="oder__group">
+            <h3 class="visually-hidden">Тип продукта</h3>
+            <legend class="oder__tittle">Тип</legend>
+            <ul class="oder__list">
+              <li class="oder__item">
                 <label class="control">
                   <input class="control__input visually-hidden" type="radio" name="product-type" value="accessories" checked>
                   <span class="control__mark control__mark--radio"></span>
                   <span class="control__label">Аксессуар для интерьера</span>
                 </label>
               </li>
-              <li class="form__item">
+              <li class="oder__item">
                 <label class="control">
                   <input class="control__input visually-hidden" type="radio" name="product-type" value="toys">
                   <span class="control__mark control__mark--radio"></span>
@@ -78,45 +79,46 @@
               </li>
             </ul>
           </fieldset>
-          <fieldset class="form__group">
-            <legend class="form__tittle">Цвет</legend>
-            <ul class="form__list">
-              <li class="form__item">
+          <fieldset class="oder__group">
+            <h3 class="visually-hidden">Цвет продукта</h3>
+            <legend class="oder__tittle">Цвет</legend>
+            <ul class="oder__list">
+              <li class="oder__item oder__item--color">
                 <label class="control">
                   <input class="control__input visually-hidden" type="checkbox" name="White" value="Белый" checked>
                   <span class="control__mark"></span>
                   <span class="control__label">Белый</span>
                 </label>
               </li>
-              <li class="form__item">
+              <li class="oder__item oder__item--color">
                 <label class="control">
                   <input class="control__input visually-hidden" type="checkbox" name="Gray" value="Серый" checked>
                   <span class="control__mark"></span>
                   <span class="control__label">Серый</span>
                 </label>
               </li>
-              <li class="form__item">
+              <li class="oder__item oder__item--color">
                 <label class="control">
                   <input class="control__input visually-hidden" type="checkbox" name="Tiffany" value="Тиффани">
                   <span class="control__mark"></span>
                   <span class="control__label">Тиффани</span>
                 </label>
               </li>
-              <li class="form__item">
+              <li class="oder__item oder__item--color">
                 <label class="control">
                   <input class="control__input visually-hidden" type="checkbox" name="Black" value="Черный">
                   <span class="control__mark"></span>
                   <span class="control__label">Черный</span>
                 </label>
               </li>
-              <li class="form__item">
+              <li class="oder__item oder__item--color">
                 <label class="control">
                   <input class="control__input visually-hidden" type="checkbox" name="Pink" value="Розовый">
                   <span class="control__mark"></span>
                   <span class="control__label">Розовый</span>
                 </label>
               </li>
-              <li class="form__item">
+              <li class="oder__item oder__item--color">
                 <label class="control">
                   <input class="control__input visually-hidden" type="checkbox" name="Orange" value="Оранжевый">
                   <span class="control__mark"></span>
@@ -125,43 +127,48 @@
               </li>
             </ul>
           </fieldset>
-          <fieldset class="form__group">
-            <legend class="form__tittle">ФИО</legend>
-            <p class="form__field-group field">
+          <fieldset class="oder__group">
+            <h3 class="visually-hidden">Контактные данные: ФИО</h3>
+            <legend class="oder__tittle">ФИО</legend>
+            <p class="oder__field-group field">
               <label class="field__label" for="user-name">Имя:</label>
               <input class="field__input" type="text" id="user-name" name="name" placeholder="Введите ваше имя*" required>
             </p>
-            <p class="form__field-group field">
+            <p class="oder__field-group field">
               <label class="field__label" for="user-surname">Фамилия:</label>
               <input class="field__input" type="text" id="user-surname" name="surname" placeholder="Укажите фамилию*" required>
             </p>
-            <p class="form__field-group field">
+            <p class="oder__field-group field">
               <label class="field__label" for="user-patronymic">Отчество:</label>
               <input class="field__input" type="text" id="user-patronymic" name="lpatronymic" placeholder="Отчество, если желаете">
             </p>
           </fieldset>
-          <fieldset class="form__group">
-            <legend class="form__tittle">Тел</legend>
-            <p class="form__field-group field">
-              <label class="field__label">
-                <input class="field__input" type="tel"  name="user-phone" placeholder="+7 ХХХ ХХХ ХХ ХХ*" required>
-              </label>
+          <fieldset class="oder__group">
+            <h3 class="visually-hidden">Контактные данные: номер телефона</h3>
+            <legend class="oder__tittle">Тел</legend>
+            <p class="oder__field-group field">
+              <label class="field__label"></label>
+              <input class="field__input" type="tel"  name="user-phone" placeholder="+7 ХХХ ХХХ ХХ ХХ*" required>
             </p>
-          </fieldset><fieldset class="form__group">
-            <legend class="form__tittle">E-mail</legend>
-            <p class="form__field-group field">
-              <label class="field__label">
-                <input class="field__input" type="email"  name="user-email" placeholder="Ваш Email*" required>
-              </label>
+          </fieldset><fieldset class="oder__group">
+            <h3 class="visually-hidden">Контактные данные: электронная почта</h3>
+            <legend class="oder__tittle">E-mail</legend>
+            <p class="oder__field-group field">
+              <label class="field__label"></label>
+              <input class="field__input" type="email"  name="user-email" placeholder="Ваш Email*" required>
             </p>
-          </fieldset><fieldset class="form__group">
-            <legend class="form__tittle">Доп</legend>
-            <p class="form__field-group field">
-              <label class="field__label">
-                <textarea class="form__textarea" name="comment" cols="20" rows="5" placeholder="Опишите все ваши пожелания к заказу"></textarea>
-              </label>
+          </fieldset><fieldset class="oder__group">
+            <h3 class="visually-hidden">Дополнительная информация к заказу</h3>
+            <legend class="oder__tittle">Доп</legend>
+            <p class="oder__field-group field">
+              <label class="field__label"></label>
+              <textarea class="field__textarea" name="comment" cols="20" rows="5" placeholder="Опишите все ваши пожелания к заказу"></textarea>
             </p>
           </fieldset>
+          <p class="oder__mark">*Поля обязательны для заполнения</p>
+          <div>
+            <a class="button">Отправить заказ</a>
+          </div>
         </form>
       </section>
     </main>

@@ -1,14 +1,33 @@
 .form-container__header {
   background-color: $gray;
-  height: 177px;
+
 
 
   @media (min-width: $tablet-width) {
-    height: 226px;
+
   }
 
   @media (min-width: $desktop-width) {
-    height: 255px;
+
+  }
+}
+
+.form-container__oder {
+  width: 320px;
+  margin: 0 auto;
+  padding: 0 30px;
+  margin-bottom: 55px;
+
+  @media (min-width: $tablet-width) {
+    width: 768px;
+    padding: 0 50px;
+    margin-bottom: 53px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1150px;
+    padding: 0 50px;
+    margin-bottom: 57px;
   }
 }
 
