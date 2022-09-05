@@ -8,6 +8,10 @@
   margin: 0;
   border: none;
   margin-bottom: 34px;
+
+  @media (min-width: $tablet-width) {
+
+  }
 }
 
 .oder__tittle {
