@@ -1,0 +1,33 @@
+.trade-list {
+  display: none;
+  grid-area: trade-list;
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    justify-content: start;
+    position: absolute;
+    gap: 42px;
+  }
+}
+
+.trade-list__item {
+  @media (min-width: $desktop-width) {
+    margin-top: 20px;
+  }
+}
+
+.trade-list__link {
+  position: relative;
+  display: block;
+  font-weight: $font-weight-bold;
+  color: $black;
+  text-decoration: none;
+
+  @media (min-width: $tablet-width) {
+    font-size: 15px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 17px;
+  }
+}
