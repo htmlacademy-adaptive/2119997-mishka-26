@@ -1,16 +1,78 @@
+.oder__text-wrapper {
+  width: 320px;
+  margin: 0 auto;
+  padding: 0 30px;
+
+  @media (min-width: $tablet-width) {
+    width: 768px;
+    padding: 0 50px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1150px;
+    padding: 0 50px;
+  }
+}
+
 .oder__text {
   font-size: 13px;
   margin: 13px 0 29px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 17px;
+    line-height: 30px;
+    margin: 54px 0 63px;
+  }
+}
+
+.oder__container {
+  padding: 50px 0;
+
+  @media (min-width: $tablet-width) {
+
+    &--gray {
+      background-color: $gray;
+      padding: 50px 0;
+    }
+  }
+
 }
 
 .oder__group {
   padding: 0;
   margin: 0;
   border: none;
-  margin-bottom: 34px;
 
   @media (min-width: $tablet-width) {
 
+  }
+}
+
+.oder__group-wrapper {
+  width: 320px;
+  margin: 0 auto;
+  padding: 0 30px;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    gap: 120px;
+    width: 768px;
+    padding: 0 50px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1150px;
+    padding: 0 50px;
+  }
+}
+
+.oder__field-wrapper {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+
+  @media (min-width: $desktop-width) {
+    // padding-right: 173px;
   }
 }
 
@@ -22,29 +84,65 @@
 }
 
 .oder__list {
+  display: grid;
+  row-gap: 13px;
   padding: 0;
   margin: 0;
   list-style-type: none;
-}
 
+  &--color {
+    row-gap: 23px;
+  }
+
+  @media (min-width: $tablet-width) {
+
+    &--color {
+      grid-template-columns: repeat(2, 250px);
+      row-gap: 24px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+
+    &--color {
+      grid-template-columns: repeat(3, 240px);
+    }
+  }
+}
 .oder__item {
   font-weight: $font-weight-bold;
   line-height: 18px;
   color: $black;
-  margin-bottom: 13px;
+
+  @media (min-width: $tablet-width) {
 
     &--color {
-    margin-bottom: 23px;
-
-    &:last-child {
-      margin-bottom: 0;
+      margin-bottom: 0px;
     }
   }
 }
 
+.oder__mark {
+  font-size: 14px;
+  line-height: 16px;
+  margin: 0;
+  margin-bottom: 30px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 0;
+  }
+}
+
 .control {
-  display: flex;
+  display: grid;
+  grid-template-columns: 38px 1fr;
+  column-gap: 23px;
   align-items: center;
+
+  @media (min-width: $tablet-width) {
+    grid-template-columns: 52px 1fr;
+    column-gap: 29px;
+  }
 }
 
 .control__mark {
@@ -56,7 +154,6 @@
   height: 38px;
   background-color: transparent;
   border: 2px solid $main-color;
-  margin-right: 23px;
 
   &:hover {
     border-color: $secondary-color;
@@ -70,6 +167,11 @@
   &--radio {
     border-radius: 50%;
   }
+
+  @media (min-width: $tablet-width) {
+    width: 52px;
+    height: 52px;
+  }
 }
 
 .control__input[type="radio"]:checked+.control__mark::before {
@@ -82,6 +184,11 @@
   top: 50%;
   left: 50%;
   transform: translateX(-50%) translateY(-50%);
+
+  @media (min-width: $tablet-width) {
+    width: 20px;
+    height: 20px;
+  }
 }
 
 .control__input[type="checkbox"]:checked+.control__mark {
@@ -89,4 +196,28 @@
   background-position: center;
   background-size: 23px 16px;
   background-repeat: no-repeat;
+
+  @media (min-width: $tablet-width) {
+    background-size: 32px 22px;
+  }
+}
+
+.oder__footer-wrapper {
+  width: 320px;
+  margin: 0 auto;
+  padding: 0 30px;
+
+  @media (min-width: $tablet-width) {
+    width: 768px;
+    padding: 0 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row-reverse;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1150px;
+    padding: 0 50px;
+  }
 }
