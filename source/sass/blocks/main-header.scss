@@ -7,7 +7,7 @@
 
   @media (min-width: $tablet-width) {
     display: grid;
-    grid-template-columns: 45% 55%;
+    grid-template-columns: 50% 50%;
     grid-template-areas:  "logo user-list"
                           "site-list delivery";
     width: 668px;
@@ -28,20 +28,30 @@
   display: block;
   grid-area: logo;
   text-align: center;
-  margin: 22px auto;
+  margin: 21px 0;
 
   @media (min-width: $tablet-width) {
     text-align: start;
   }
 
   @media (min-width: $desktop-width) {
-    text-align: center;
+    margin: 8px 30px;
   }
 }
 
 .main-header__logo img {
   width: 86px;
   height: 35px;
+
+  @media (min-width: $tablet-width) {
+    width: 113px;
+    height: 46px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 149px;
+    height: 72px;
+  }
 }
 
 .main-header__burger-menu {
@@ -99,21 +109,17 @@
   list-style: none;
 }
 
-.trade-list {
-  display: none;
-  grid-area: trade-list;
-
-  @media (min-width: $desktop-width) {
-    display: flex;
-    justify-content: start;
-  }
-}
 
 .main-header__delivery {
   display: none;
   grid-area: delivery;
+  margin: 0;
 
   @media (min-width: $tablet-width) {
+    font-size: 15px;
     display: block;
+    position: absolute;
+    margin-top: 20px;
+    right: 0;
   }
 }

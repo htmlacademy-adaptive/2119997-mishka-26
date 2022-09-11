@@ -4,9 +4,23 @@
 
 .main-footer__logo {
   display: none;
+  cursor: pointer;
 
   @media (min-width: $tablet-width) {
     display: block;
+  }
+}
+
+.main-footer__logo svg {
+  fill: $black;
+
+  &:hover {
+    fill: $secondary-color;
+    transition: 250ms;
+  }
+
+  &:active {
+    opacity: 0.3;
   }
 }
 
@@ -38,10 +52,3 @@
   }
 }
 
-.main-footer__copyright {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 27px;
-  padding: 22px 0 23px;
-}

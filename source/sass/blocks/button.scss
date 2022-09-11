@@ -14,8 +14,8 @@
 
   &:hover {
     color: $white;
-
     background-color: $main-color;
+    transition: 250ms;
   }
 
   &:active {

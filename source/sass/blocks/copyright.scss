@@ -1,3 +1,11 @@
+.copyright {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 27px;
+  padding: 22px 0 23px;
+}
+
 .copyright__text {
   font-weight: $font-weight-bold;
   font-size: 19px;
@@ -6,4 +14,17 @@
 
 .copyright__link {
   display: block;
+}
+
+.copyright__link svg {
+  fill: $secondary-color;
+
+  &:hover {
+    fill: rgba(70, 193, 174, 1);
+    transition: 250ms;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
