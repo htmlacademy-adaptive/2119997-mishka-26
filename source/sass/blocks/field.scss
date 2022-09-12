@@ -1,5 +1,5 @@
 .field {
-  display: flex;
+  display: flow-root;
   flex-direction: column;
   flex-grow: 1;
   margin: 0;
@@ -20,6 +20,16 @@
   font-weight: $font-weight-bold;
   line-height: 18px;
   color: $black;
+  display: flex;
+  position: relative;
+
+  & svg {
+    right: 0;
+    top: 0;
+    position: absolute;
+    transform: translate(-50%, 50%);
+    opacity: 0.2;
+  }
 }
 
 .field__input {
@@ -44,6 +54,13 @@
     border-color: $secondary-color;
     transition: 250ms;
   }
+}
+
+.field__input:hover + svg,
+.field__input:focus + svg {
+  fill: #62d1ba;
+  opacity: 1;
+  transition: 250ms;
 }
 
 .field__textarea {
