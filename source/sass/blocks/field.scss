@@ -56,8 +56,8 @@
   }
 }
 
-.field__input:hover + svg,
-.field__input:focus + svg {
+.field__input:hover+svg,
+.field__input:focus+svg {
   fill: #62d1ba;
   opacity: 1;
   transition: 250ms;
@@ -82,4 +82,3 @@
     transition: 250ms;
   }
 }
-
