@@ -40,7 +40,9 @@
 }
 
 .user-list__link--search span {
-  display: none;
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
 }
 
 .user-list__link--search svg {

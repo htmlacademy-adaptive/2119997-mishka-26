@@ -24,9 +24,7 @@
   padding: 0;
   list-style-type: none;
 
-  @media (min-width: $tablet-width) {
-
-  }
+  @media (min-width: $tablet-width) {}
 
   @media (min-width: $desktop-width) {
     display: grid;
@@ -49,6 +47,7 @@
   @media (min-width: $tablet-width) {
     display: flex;
   }
+
   @media (min-width: $desktop-width) {
     display: block;
   }
@@ -155,4 +154,3 @@
     opacity: 0.3;
   }
 }
-

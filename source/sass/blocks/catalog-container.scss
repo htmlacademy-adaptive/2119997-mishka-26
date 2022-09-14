@@ -2,7 +2,6 @@
   background-color: $gray;
   margin-bottom: 30px;
   border-top: 1px solid rgba(0, 0, 0, 0.1);
-  ;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 79px;
@@ -10,30 +9,5 @@
 
   @media (min-width: $desktop-width) {
     margin-bottom: 128px;
-  }
-}
-
-.hero__tittle {
-  width: 320px;
-  margin: 0 auto;
-  padding: 73px 30px;
-  font-weight: $font-weight-bold;
-  font-size: 27px;
-  line-height: 30px;
-  color: $black;
-  text-align: center;
-
-  @media (min-width: $tablet-width) {
-    width: 768px;
-    font-size: 43px;
-    line-height: 50px;
-    padding: 101px 50px 75px;
-  }
-
-  @media (min-width: $desktop-width) {
-    width: 1150px;
-    font-size: 53px;
-    line-height: 57px;
-    padding: 102px 50px 95px;
   }
 }
