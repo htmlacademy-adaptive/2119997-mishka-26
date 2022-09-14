@@ -124,6 +124,17 @@
   }
 }
 
+.reviews__button svg {
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
 .reviews__write {
   grid-area: reviews__write;
   margin-bottom: 45px;
