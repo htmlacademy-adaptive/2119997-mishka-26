@@ -1,3 +1,27 @@
+.contacts {
+  &::before {
+    content: "";
+    height: 7px;
+    width: 100%;
+    position: absolute;
+    background-image: url("../img/icon/zigzag-line-desktop.svg");
+    background-size: contain;
+    background-repeat: repeat-x;
+  }
+
+  @media (min-width: $tablet-width) {
+    &::before {
+      height: 17px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    &::before {
+      height: 23px;
+    }
+  }
+}
+
 .contacts__wrapper {
   position: relative;
   padding: 0 30px;

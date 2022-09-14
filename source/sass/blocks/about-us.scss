@@ -1,4 +1,29 @@
 .about-us {
+
+  &::before {
+    content: "";
+    height: 7px;
+    width: 100%;
+    position: absolute;
+    background-image: url("../img/icon/zigzag-line-desktop.svg");
+    background-size: contain;
+    background-repeat: repeat-x;
+  }
+
+  @media (min-width: $tablet-width) {
+    &::before {
+      height: 17px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    &::before {
+      height: 23px;
+    }
+  }
+}
+
+.about-us__wrapper {
   width: 320px;
   margin: 0 auto;
   padding: 0 30px;
@@ -13,12 +38,6 @@
     width: 1150px;
     margin: 0 auto;
     padding: 0 50px;
-  }
-}
-
-.about-us__wrapper {
-  @media (min-width: $desktop-width) {
-    padding: 0 175px;
   }
 }
 
