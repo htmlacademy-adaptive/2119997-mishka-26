@@ -4,7 +4,7 @@
     height: 7px;
     width: 100%;
     position: absolute;
-    background-image: url("../img/icon/zigzag-line-desktop.svg");
+    background-image: url("../img/zigzag-line-desktop.svg");
     background-size: contain;
     background-repeat: repeat-x;
   }
@@ -59,7 +59,7 @@
     line-height: 50px;
 
     &::before {
-      content: url("../img/icon/icon-flag.svg");
+      content: url("../img/icon-flag.svg");
       position: absolute;
       top: 0;
       right: 7%;
