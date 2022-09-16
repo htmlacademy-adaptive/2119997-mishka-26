@@ -1,5 +1,6 @@
 .site-list {
   grid-area: site-list;
+  display: none;
 
   @media (min-width: $tablet-width) {
     display: flex;

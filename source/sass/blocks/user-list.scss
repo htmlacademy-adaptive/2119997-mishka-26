@@ -1,5 +1,6 @@
 .user-list {
   grid-area: user-list;
+  display: none;
 
   @media (min-width: $tablet-width) {
     display: flex;

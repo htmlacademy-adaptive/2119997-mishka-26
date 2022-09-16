@@ -27,7 +27,8 @@
 .main-footer__wrapper {
   display: flex;
   flex-direction: column;
-  width: 260px;
+  width: 320px;
+  padding: 0 30px;
   margin: 0 auto;
 
   @media (min-width: $tablet-width) {
@@ -45,7 +46,7 @@
 
 .main-footer__social {
   border-bottom: 1px solid $color-border;
-  padding: 25px 0 28px;
+  padding: 28px 0 28px;
 
   @media (min-width: $tablet-width) {
     border: none;

@@ -1,7 +1,7 @@
 .production {
   width: 320px;
   margin: 0 auto;
-  margin-bottom: 58px;
+  margin-bottom: 59px;
   padding: 0 30px;
 
   @media (min-width: $tablet-width) {
@@ -38,9 +38,10 @@
 }
 
 .production__tittle-wrapper {
+  position: relative;
   display: flex;
   align-items: center;
-  padding: 22px 34px 26px;
+  padding: 20px 33px 26px;
 
   @media (min-width: $tablet-width) {
     padding: 39px 42px 25px;
@@ -54,7 +55,9 @@
 }
 
 .production__title-img {
-  margin-right: 25px;
+  position: absolute;
+  width: 32px;
+  height: 22px;
 }
 
 .production__tittle {
@@ -62,6 +65,7 @@
   margin: 0;
   grid-area: production__tittle;
   color: $black;
+  margin-left: 57px;
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
@@ -94,7 +98,7 @@
   border: none;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -47%);
   cursor: pointer;
 
   &:hover {
@@ -110,7 +114,7 @@
 
 .production__descripion {
   grid-area: production__descripion;
-  padding: 35px 33px 33px;
+  padding: 36px 32px 33px;
 
   @media (min-width: $tablet-width) {
     display: flex;
