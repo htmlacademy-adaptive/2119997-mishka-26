@@ -35,7 +35,8 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    width: 668px;
+    width: 768px;
+    padding: 0 50px;
     min-height: 143px;
   }
 
@@ -46,9 +47,10 @@
 
 .main-footer__social {
   border-bottom: 1px solid $color-border;
-  padding: 28px 0 28px;
+  padding: 28px 0;
 
   @media (min-width: $tablet-width) {
     border: none;
+    padding: 20px 0 28px;
   }
 }

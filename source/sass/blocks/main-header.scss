@@ -2,7 +2,8 @@
   position: relative;
   background-color: $white;
   color: $black;
-  width: 260px;
+  width: 320px;
+  padding: 0 30px;
   margin: 0 auto;
 
   @media (min-width: $tablet-width) {
@@ -10,7 +11,8 @@
     grid-template-columns: 50% 50%;
     grid-template-areas:  "logo user-list"
                           "site-list delivery";
-    width: 668px;
+    width: 768px;
+    padding: 0 50px;
     margin: 0 auto;
   }
 
@@ -19,7 +21,8 @@
     grid-template-columns: 40% 20% 40%;
     grid-template-areas:  "site-list logo user-list"
                           "trade-list trade-list delivery";
-    width: 1050px;
+    width: 1150px;
+    padding: 0 50px;
     margin: 0 auto;
   }
 }
