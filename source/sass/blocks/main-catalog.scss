@@ -1,6 +1,11 @@
 .main-catalog {
-  margin-top: -103px;
-  margin-bottom: 60px;
+  margin-top: -18px;
+
+
+  @media (min-width: $tablet-width) {
+    margin-top: -103px;
+    margin-bottom: 60px;
+  }
 }
 
 .main-catalog__wrapper {

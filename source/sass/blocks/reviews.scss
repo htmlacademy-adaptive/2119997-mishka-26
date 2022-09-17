@@ -71,7 +71,7 @@
   font-size: 15px;
   line-height: 30px;
   color: $main-color;
-  margin-bottom: 33px;
+  margin: 12px 0 33px;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 61px;
@@ -90,6 +90,7 @@
   line-height: 30px;
   color: $main-color;
   text-decoration: none;
+  margin-top: 3px;
 }
 
 .reviews__button-wrapper {
