@@ -21,7 +21,11 @@
   @media (min-width: $tablet-width) {
     font-size: 17px;
     line-height: 30px;
-    margin: 54px 0 63px;
+    margin-bottom: 63px;
+  }
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 13px;
   }
 }
 
@@ -33,7 +37,7 @@
 
     &--gray {
       background-color: $gray;
-      padding: 50px 0;
+      padding: 50px;
     }
   }
 
@@ -61,7 +65,18 @@
   }
 
   @media (min-width: $tablet-width) {
+    &--fio,
+    &--email {
+      margin-bottom: 0;
+    }
 
+    &--phone {
+      margin-bottom: 24px;
+    }
+
+    &--note {
+      margin-bottom: 3px;
+    }
   }
 }
 
@@ -72,7 +87,6 @@
 
   @media (min-width: $tablet-width) {
     display: flex;
-    gap: 120px;
     width: 768px;
     padding: 0 50px;
   }
@@ -131,6 +145,28 @@
   &--note {
     margin-bottom: 22px;
   }
+
+  @media (min-width: $tablet-width) {
+    margin-top: 18px;
+    margin-right: 132px;
+    margin-bottom: 0;
+
+    &--color {
+      margin-right: 123px;
+    }
+
+    &--fio {
+      margin-right: 125px;
+    }
+
+    &--email {
+      margin-right: 110px;
+    }
+
+    &--note {
+      margin-right: 102px;
+    }
+  }
 }
 
 .oder__tittle--email::after {
@@ -154,10 +190,13 @@
   }
 
   @media (min-width: $tablet-width) {
+    gap: 23px;
+    margin-bottom: 0;
 
     &--color {
       grid-template-columns: repeat(2, 250px);
       row-gap: 24px;
+      column-gap: 12px;
     }
   }
 
@@ -174,6 +213,7 @@
   color: $black;
 
   @media (min-width: $tablet-width) {
+    font-size: 19px;
 
     &--color {
       margin-bottom: 0px;
@@ -188,6 +228,8 @@
   margin-bottom: 30px;
 
   @media (min-width: $tablet-width) {
+    font-size: 17px;
+    line-height: 30px;
     margin-bottom: 0;
   }
 }
@@ -279,4 +321,8 @@
     width: 1150px;
     padding: 0 50px;
   }
+}
+
+.oder__button-wrapper {
+  width: 230px;
 }
