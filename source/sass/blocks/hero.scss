@@ -22,6 +22,7 @@
       height: 24px;
       width: 100%;
       bottom: -14px;
+      left: 5px;
       background-image: url("../img/hero-zigzag-fill-tablet.svg");
       background-repeat: repeat-x;
       z-index: 2;
@@ -40,6 +41,12 @@
 
   @media (min-width: $desktop-width) {
 
+    &::after {
+      background-image: url("../img/hero-zigzag-fill-desktop.svg");
+      height: 34px;
+      bottom: -20px;
+      left: -25px;
+    }
   }
 }
 
@@ -70,6 +77,9 @@
 
   @media (min-width: $desktop-width) {
     padding: 101px 0 93px;
+    font-size: 53px;
+    line-height: 57px;
+
 
     &--index {
     width: 1150px;

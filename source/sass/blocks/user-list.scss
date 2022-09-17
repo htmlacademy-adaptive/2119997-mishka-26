@@ -9,8 +9,8 @@
   }
 
   @media (min-width: $desktop-width) {
-    display: flex;
-    justify-content: end;
+    grid-template-columns: 83px 267px;;
+
   }
 }
 
@@ -65,7 +65,7 @@
   height: 18px;
 
   @media (min-width: $tablet-width) {
-    left: 30px;
+    left: 32px;
   }
 }
 
@@ -79,7 +79,7 @@
   height: 18px;
 
   @media (min-width: $tablet-width) {
-    left: 30px;
+    left: 31px;
   }
 }
 

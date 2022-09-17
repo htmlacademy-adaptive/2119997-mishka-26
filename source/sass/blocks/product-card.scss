@@ -15,7 +15,8 @@
   @media (min-width: $desktop-width) {
     width: 1150px;
     padding: 0 50px;
-    margin-bottom: 57px;
+    margin-top: 130px;
+    margin-bottom: 53px;
   }
 }
 
@@ -32,8 +33,8 @@
 
   @media (min-width: $desktop-width) {
     display: grid;
-    grid-template-columns: repeat(3, 316px);
-    gap: 51px;
+    grid-template-columns: repeat(3, 317px);
+    gap: 50px;
   }
 }
 
@@ -62,7 +63,6 @@
 .product-card__link {
 
   @media (min-width: $desktop-width) {
-    min-height: 462px;
     display: block;
   }
 }
@@ -78,7 +78,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding: 27px 34px;
+    padding: 29px 27px;
   }
 }
 
