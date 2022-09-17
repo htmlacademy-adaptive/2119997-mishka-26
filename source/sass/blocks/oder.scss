@@ -16,7 +16,7 @@
 
 .oder__text {
   font-size: 13px;
-  margin: 13px 0 29px;
+  margin: 17px 0 29px;
 
   @media (min-width: $tablet-width) {
     font-size: 17px;
@@ -26,9 +26,10 @@
 }
 
 .oder__container {
-  padding: 50px 0;
+
 
   @media (min-width: $tablet-width) {
+    padding: 50px 0;
 
     &--gray {
       background-color: $gray;
@@ -42,6 +43,22 @@
   padding: 0;
   margin: 0;
   border: none;
+
+  &--fio {
+    margin-bottom: 35px;
+  }
+
+  &--phone {
+    margin-bottom: 34px;
+  }
+
+  &--email {
+    margin-bottom: 35px;
+  }
+
+  &--note {
+    margin-bottom: 11px;
+  }
 
   @media (min-width: $tablet-width) {
 
@@ -77,18 +94,60 @@
 }
 
 .oder__tittle {
+  position: relative;
   color: $secondary-color;
+  font-weight: $font-weight-bold;
   text-transform: uppercase;
   line-height: 16px;
-  margin-bottom: 30px;
+  margin-bottom: 32px;
+  padding: 0;
+
+  &::after {
+    position: absolute;
+    content: "";
+    top: 7px;
+    left: 60px;
+    right: 0;
+    height: 1px;
+    background-color: $secondary-color;
+  }
+
+  &--color {
+    margin-bottom: 25px;
+  }
+
+  &--fio {
+    margin-bottom: 31px;
+  }
+
+  &--phone {
+    margin-bottom: 6px;
+  }
+
+  &--email {
+    margin-bottom: 5px;
+  }
+
+  &--note {
+    margin-bottom: 22px;
+  }
+}
+
+.oder__tittle--email::after {
+  left: 78px;
 }
 
 .oder__list {
   display: grid;
-  row-gap: 13px;
+  row-gap: 15px;
   padding: 0;
   margin: 0;
   list-style-type: none;
+  margin-bottom: 33px;
+
+  &--type {
+
+  }
 
   &--color {
     row-gap: 23px;

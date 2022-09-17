@@ -78,7 +78,7 @@
             <div class="oder__group-wrapper">
               <h3 class="visually-hidden">Тип продукта</h3>
               <legend class="oder__tittle">Тип</legend>
-              <ul class="oder__list">
+              <ul class="oder__list oder__list--type">
                 <li class="oder__item">
                   <label class="control">
                     <input class="control__input visually-hidden" type="radio" name="product-type" value="accessories"
@@ -102,7 +102,7 @@
           <fieldset class="oder__group">
             <div class="oder__group-wrapper">
               <h3 class="visually-hidden">Цвет продукта</h3>
-              <legend class="oder__tittle">Цвет</legend>
+              <legend class="oder__tittle oder__tittle--color">Цвет</legend>
               <ul class="oder__list oder__list--color">
                 <li class="oder__item oder__item--color">
                   <label class="control">
@@ -151,10 +151,10 @@
           </fieldset>
         </div>
         <div class="oder__container">
-          <fieldset class="oder__group">
+          <fieldset class="oder__group oder__group--fio">
             <div class="oder__group-wrapper">
               <h3 class="visually-hidden">Контактные данные: ФИО</h3>
-              <legend class="oder__tittle">ФИО</legend>
+              <legend class="oder__tittle oder__tittle--fio">ФИО</legend>
               <div class="oder__field-wrapper">
                 <p class="oder__field-group field">
                   <label class="field__label" for="user-name">Имя:</label>
@@ -176,12 +176,12 @@
           </fieldset>
         </div>
         <div class="oder__container--gray">
-          <fieldset class="oder__group">
+          <fieldset class="oder__group oder__group--phone">
             <div class="oder__group-wrapper">
               <h3 class="visually-hidden">Контактные данные: номер телефона</h3>
-              <legend class="oder__tittle">Тел</legend>
+              <legend class="oder__tittle oder__tittle--phone">Тел</legend>
               <p class="oder__field-group field">
-                <label class="field__label">
+                <label class="field__label field__label--phone">
                   <input class="field__input" type="tel" name="user-phone" placeholder="+7 ХХХ ХХХ ХХ ХХ*" required>
                   <svg width="25" height="24">
                     <use xlink:href="img/icon/sprite.svg#icon-phone"></use>
@@ -190,12 +190,12 @@
               </p>
             </div>
           </fieldset>
-          <fieldset class="oder__group">
+          <fieldset class="oder__group oder__group--email">
             <div class="oder__group-wrapper">
               <h3 class="visually-hidden">Контактные данные: электронная почта</h3>
-              <legend class="oder__tittle">E-mail</legend>
+              <legend class="oder__tittle oder__tittle--email">E-mail</legend>
               <p class="oder__field-group field">
-                <label class="field__label">
+                <label class="field__label field__label--email">
                   <input class="field__input" type="email" name="user-email" placeholder="Ваш Email*" required>
                   <svg width="32" height="21" viewBox="0 0 32 21" xmlns="http://www.w3.org/2000/svg">
                     <use xlink:href="img/icon/sprite.svg#icon-email"></use>
@@ -206,13 +206,13 @@
           </fieldset>
         </div>
         <div class="oder__container">
-          <fieldset class="oder__group">
+          <fieldset class="oder__group oder__group--note">
             <div class="oder__group-wrapper">
               <h3 class="visually-hidden">Дополнительная информация к заказу</h3>
-              <legend class="oder__tittle">Доп</legend>
+              <legend class="oder__tittle oder__tittle--note">Доп</legend>
               <p class="oder__field-group field">
                 <label class="field__label"></label>
-                <textarea class="field__textarea" name="comment" cols="20" rows="5"
+                <textarea class="field__textarea" name="comment" cols="20" rows="6"
                   placeholder="Опишите все ваши пожелания к заказу"></textarea>
               </p>
             </div>
