@@ -39,6 +39,7 @@
 
 .product-card__item {
   border: 1px solid $gray;
+  line-height: 0;
 
   &:hover {
     box-shadow: 0 6px 10px 0px rgba(0, 0, 0, 0.1);
@@ -50,7 +51,7 @@
 
   @media (min-width: $tablet-width) {
     display: flex;
-    line-height: 0;
+
   }
 
   @media (min-width: $desktop-width) {
