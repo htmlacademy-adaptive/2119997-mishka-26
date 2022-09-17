@@ -37,6 +37,15 @@
       margin-right: 0;
     }
   }
+
+  @media (min-width: $tablet-width) {
+    margin-right: 24px;
+
+    &--phone,
+    &--email {
+      margin-right: 0;
+    }
+  }
 }
 
 .field__label--phone svg {
@@ -50,6 +59,10 @@
     right: 14px;
     top: -1px;
   }
+
+  @media (min-width: $tablet-width) {
+    right: -4px;
+  }
 }
 
 .field__label--email svg {
@@ -61,6 +74,11 @@
 
   @media (min-width: $tablet-width) {
     right: 7px;
+    top: 5px;
+  }
+
+  @media (min-width: $tablet-width) {
+    right: -12px;
     top: 5px;
   }
 }

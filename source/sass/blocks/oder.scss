@@ -10,7 +10,7 @@
 
   @media (min-width: $desktop-width) {
     width: 1150px;
-    padding: 0 50px;
+    padding: 0 225px;
   }
 }
 
@@ -78,6 +78,12 @@
       margin-bottom: 3px;
     }
   }
+
+  @media (min-width: $desktop-width) {
+    &--note {
+      margin-bottom: 0px;
+    }
+  }
 }
 
 .oder__group-wrapper {
@@ -93,7 +99,7 @@
 
   @media (min-width: $desktop-width) {
     width: 1150px;
-    padding: 0 50px;
+    padding: 0 225px 0 112px;
   }
 }
 
@@ -167,6 +173,26 @@
       margin-right: 102px;
     }
   }
+
+  @media (min-width: $desktop-width) {
+    margin-right: 77px;
+
+    &--color {
+      margin-right: 69px;
+    }
+
+    &--fio {
+      margin-right: 74px;
+    }
+
+    &--email {
+      margin-right: 55px;
+    }
+
+    &--note {
+      margin-right: 50px;
+    }
+  }
 }
 
 .oder__tittle--email::after {
@@ -201,9 +227,12 @@
   }
 
   @media (min-width: $desktop-width) {
+    gap: 22px;
 
     &--color {
       grid-template-columns: repeat(3, 240px);
+      row-gap: 24px;
+      column-gap: 22px;
     }
   }
 }
@@ -319,7 +348,7 @@
 
   @media (min-width: $desktop-width) {
     width: 1150px;
-    padding: 0 50px;
+    padding: 0 225px;
   }
 }
 
