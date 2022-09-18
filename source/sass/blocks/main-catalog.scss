@@ -6,6 +6,11 @@
     margin-top: -123px;
     margin-bottom: 23px;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-top: -117px;
+    margin-bottom: 73px;
+  }
 }
 
 .main-catalog__wrapper {
@@ -62,6 +67,10 @@
 
     & svg {
       right: 10px;
+
+      @media (min-width: $desktop-width) {
+      right: 17px;
+      }
     }
   }
 
@@ -76,6 +85,10 @@
 
     & svg {
       right: -3px;
+
+      @media (min-width: $desktop-width) {
+      right: 5px;
+      }
     }
   }
 }
@@ -105,5 +118,10 @@
     padding: 26px 30px 31px;
     font-size: 20px;
     line-height: 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 100%;
+    padding: 26px 36px 31px;
   }
 }
