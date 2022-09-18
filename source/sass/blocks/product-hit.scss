@@ -9,7 +9,7 @@
 
    @media (min-width: $tablet-width) {
      display: grid;
-     grid-template-columns: 290px 165px 125px;
+     grid-template-columns: 292px 164px 128px;
      column-gap: 42px;
      grid-template-areas: "product-hit__tittle product-hit__tittle product-hit__legend"
        "product-hit__desc image image"
@@ -67,6 +67,11 @@
    }
 
    @media (min-width: $tablet-width) {
+    font-size: 19px;
+    line-height: 19px;
+    text-align: center;
+    margin-top: 36px;
+
      & br {
        display: block;
      }
@@ -85,7 +90,7 @@
      font-size: 17px;
      line-height: 30px;
      margin: 0;
-     margin-bottom: 48px;
+     margin: -13px 0 38px;
    }
  }
 
@@ -100,7 +105,7 @@
    border-collapse: collapse;
 
    @media (min-width: $tablet-width) {
-     margin-bottom: 37px;
+     margin-bottom: 42px;
    }
  }
 
@@ -114,6 +119,10 @@
 
    &--name {
      width: 38%;
+
+     @media (min-width: $tablet-width) {
+      width: 33%;
+    }
    }
  }
 
@@ -133,8 +142,13 @@
    text-align: center;
    margin: 26px 0 24px;
 
+   @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 24px;
+    margin: 15px 0 33px;
+  }
+
    @media (min-width: $desktop-width) {
-     font-size: 20px;
-     line-height: 24px;
+
    }
  }

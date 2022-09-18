@@ -1,4 +1,5 @@
 .contacts {
+  position: relative;
   &::before {
     content: "";
     height: 6px;
@@ -10,8 +11,13 @@
   }
 
   @media (min-width: $tablet-width) {
+    margin-top: 111px;
+
     &::before {
+      background-image: url("../img/zigzag-line-tablet.svg");
+      background-position: -24px 0px;
       height: 17px;
+      margin-top: -42px;
     }
   }
 
@@ -82,7 +88,7 @@
 
   @media (min-width: $tablet-width) {
     display: flex;
-    gap: 25px;
+    gap: 51px;
     padding-top: 49px;
   }
 
@@ -96,22 +102,22 @@
   display: flex;
   gap: 33px;
   margin-top: 29px;
+  font-weight: $font-weight-normal;
+  font-size: 14px;
+  line-height: 30px;
 
   @media (min-width: $tablet-width) {
+    font-size: 17px;
     margin: 0;
+    gap: 24px;
   }
 }
 
 .contacts__name {
-  font-weight: $font-weight-normal;
-  font-size: 14px;
-  line-height: 30px;
+
 }
 
 .contacts__value {
-  font-weight: $font-weight-normal;
-  font-size: 14px;
-  line-height: 30px;
   margin: 0;
 }
 
@@ -139,7 +145,7 @@
   padding-top: 62px;
 
   @media (min-width: $tablet-width) {
-    padding-top: 49px;
+    padding-top: 47px;
   }
 
   @media (min-width: $desktop-width) {
@@ -161,11 +167,6 @@
   padding: 42px 0 39px;
 
   @media (min-width: $tablet-width) {
-    padding: 55px 0 57px;
-  }
-
-  @media (min-width: $tablet-width) {
-    padding: 85px 119px 0 174px;
-    align-self: end;
+    padding: 56px 219px 57px;
   }
 }

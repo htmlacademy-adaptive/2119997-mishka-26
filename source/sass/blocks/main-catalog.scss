@@ -3,8 +3,8 @@
 
 
   @media (min-width: $tablet-width) {
-    margin-top: -103px;
-    margin-bottom: 60px;
+    margin-top: -123px;
+    margin-bottom: 23px;
   }
 }
 
@@ -30,7 +30,6 @@
   list-style-type: none;
 
   @media (min-width: $tablet-width) {
-    width: 668px;
     grid-template-columns: 334px 334px;
   }
 
@@ -62,7 +61,7 @@
     }
 
     & svg {
-      right: 17px;
+      right: 10px;
     }
   }
 
@@ -103,6 +102,8 @@
   padding: 24px 30px 31px 30px;
 
   @media (min-width: $tablet-width) {
-    width: 100%;
+    padding: 26px 30px 31px;
+    font-size: 20px;
+    line-height: 30px;
   }
 }

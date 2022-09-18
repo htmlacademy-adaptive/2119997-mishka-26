@@ -29,6 +29,10 @@
     }
 
     &--index {
+
+      &::after {
+        bottom: -8px;
+      }
       background-image: url("../img/background/hero-desktop@1x.jpg");
       background-size: auto;
 
@@ -71,7 +75,7 @@
     padding: 101px 0 72px;
 
     &--index {
-      padding: 155px 50px 475px 50px;
+      padding: 155px 50px 494px;
     }
   }
 
