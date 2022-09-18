@@ -89,6 +89,7 @@
   font-weight: $font-weight-normal;
   line-height: 30px;
   color: $main-color;
+  text-decoration: none;
 }
 
 .reviews__button-wrapper {
@@ -121,6 +122,17 @@
     &--left {
       padding-right: 0;
     }
+  }
+}
+
+.reviews__button svg {
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
   }
 }
 

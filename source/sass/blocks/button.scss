@@ -12,6 +12,14 @@
   background-color: $white;
   cursor: pointer;
 
+  &--modal {
+    line-height: 16px;
+    background-color: $secondary-color;
+    color: $white;
+    border: 0;
+    width: 100%;
+  }
+
   &:hover {
     color: $white;
     background-color: $main-color;

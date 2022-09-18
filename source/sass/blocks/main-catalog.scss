@@ -1,3 +1,8 @@
+.main-catalog {
+  margin-top: -103px;
+  margin-bottom: 60px;
+}
+
 .main-catalog__wrapper {
 
   @media (min-width: $tablet-width) {
@@ -31,6 +36,7 @@
 }
 
 .main-catalog__item {
+  z-index: 1;
 
   & svg {
     position: absolute;
