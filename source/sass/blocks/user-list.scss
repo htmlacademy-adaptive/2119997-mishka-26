@@ -1,14 +1,15 @@
 .user-list {
-  grid-area: user-list;
+
 
   @media (min-width: $tablet-width) {
     display: grid;
+    grid-area: user-list;
     justify-content: end;
     grid-template-columns: 83px 265px;
   }
 
   @media (min-width: $desktop-width) {
-    grid-template-columns: 83px 267px;;
+    grid-template-columns: 83px 267px;
 
   }
 }

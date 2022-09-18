@@ -4,12 +4,12 @@
 
   @media (min-width: $tablet-width) {
     margin-top: -123px;
-    margin-bottom: 23px;
+    margin-bottom: 18px;
   }
 
   @media (min-width: $desktop-width) {
     margin-top: -117px;
-    margin-bottom: 73px;
+    margin-bottom: 68px;
   }
 }
 
@@ -66,10 +66,14 @@
     }
 
     & svg {
-      right: 10px;
+      right: 16px;
+
+      @media (min-width: $tablet-width) {
+        right: 10px;
+      }
 
       @media (min-width: $desktop-width) {
-      right: 17px;
+        right: 17px;
       }
     }
   }
@@ -87,7 +91,7 @@
       right: -3px;
 
       @media (min-width: $desktop-width) {
-      right: 5px;
+        right: 5px;
       }
     }
   }
@@ -115,13 +119,13 @@
   padding: 24px 30px 31px 30px;
 
   @media (min-width: $tablet-width) {
-    padding: 26px 30px 31px;
+    padding: 26px 30px 36px;
     font-size: 20px;
     line-height: 30px;
   }
 
   @media (min-width: $desktop-width) {
     width: 100%;
-    padding: 26px 36px 31px;
+    padding: 26px 36px 36px;
   }
 }

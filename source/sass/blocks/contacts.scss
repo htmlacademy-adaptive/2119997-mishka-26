@@ -1,5 +1,6 @@
 .contacts {
   position: relative;
+
   &::before {
     content: "";
     height: 6px;
@@ -22,6 +23,8 @@
   }
 
   @media (min-width: $desktop-width) {
+    margin-top: 62px;
+
     &::before {
       background-image: url("../img/zigzag-line-desktop.svg");
       height: 23px;
@@ -46,9 +49,9 @@
   @media (min-width: $desktop-width) {
     display: grid;
     grid-template-columns: 40% 60%;
-    grid-template-areas:  "contacts__tittle contacts__map"
-                          "contacts__list contacts__map"
-                          "contacts__write contacts__map";
+    grid-template-areas: "contacts__title contacts__map"
+      "contacts__list contacts__map"
+      "contacts__write contacts__map";
     width: 1150px;
     padding: 0 50px;
     padding-left: 225px;
@@ -56,8 +59,8 @@
   }
 }
 
-.contacts__tittle {
-  grid-area: contacts__tittle;
+.contacts__title {
+  grid-area: contacts__title;
   font-weight: $font-weight-bold;
   font-size: 25px;
   line-height: 30px;
@@ -133,7 +136,7 @@
 .contacts__link {
   color: $main-color;
   text-decoration-color: $secondary-color;
-  text-underline-offset: 13px;
+  text-underline-offset: 5px;
 
   &:hover {
     color: $secondary-color;
@@ -142,6 +145,14 @@
 
   &:active {
     text-decoration-color: rgba(70, 193, 174, 0.1);
+  }
+
+  @media (min-width: $tablet-width) {
+    text-underline-offset: 7px;
+  }
+
+  @media (min-width: $desktop-width) {
+    text-underline-offset: 13px;
   }
 }
 
@@ -180,6 +191,7 @@
   }
 
   @media (min-width: $desktop-width) {
+    padding: 0;
     padding-top: 54px;
     width: 66%;
   }

@@ -7,13 +7,13 @@
 
     @media (min-resolution: 2dppx) {
       background-image: url("../img/background/review@2x.jpg");
-      background-size:350px 457px;
+      background-size: 350px 457px;
     }
   }
 
   @media (min-width: $desktop-width) {
-    background-position: 50px 0;
-    margin-bottom: 111px;
+    background-position: calc(50% - 350px);
+    background-size: auto;
   }
 }
 
@@ -28,8 +28,8 @@
     padding: 0 50px;
     display: grid;
     grid-template-columns: 50% 50%;
-    grid-template-areas:  "reviews__tittle reviews__write"
-                          "reviews__list reviews__list";
+    grid-template-areas: "reviews__title reviews__write"
+      "reviews__list reviews__list";
     align-items: baseline;
 
   }
@@ -42,12 +42,13 @@
   }
 }
 
-.reviews__tittle {
-  grid-area: reviews__tittle;
+.reviews__title {
+  grid-area: reviews__title;
   font-weight: $font-weight-bold;
   font-size: 25px;
   line-height: 30px;
   margin: 0;
+  color: $black;
 
   @media (min-width: $tablet-width) {
     font-size: 43px;
@@ -66,6 +67,11 @@
 .reviews__list {
   grid-area: reviews__list;
   position: relative;
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 49px;
+  }
+
 }
 
 .reviews__item {
@@ -73,7 +79,11 @@
 }
 
 .reviews__autor-info {
-  margin-bottom: 46px;
+  margin-bottom: 30px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 46px;
+  }
 }
 
 .reviews__text {
@@ -173,7 +183,7 @@
   @media (min-width: $tablet-width) {
     padding-top: 79px;
     margin-bottom: 30px;
-    width: 53%;
+    width: 52%;
     margin-left: auto;
   }
 

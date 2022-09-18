@@ -33,13 +33,13 @@
   @media (min-width: $desktop-width) {
     display: grid;
     grid-template-columns: 682px 367px;
-    grid-template-areas:  "video production__tittle"
-                          "video production__descripion"
-                          "video production__descripion";
+    grid-template-areas: "video production__title"
+      "video production__descripion"
+      "video production__descripion";
   }
 }
 
-.production__tittle-wrapper {
+.production__title-wrapper {
   position: relative;
   display: flex;
   align-items: center;
@@ -72,10 +72,10 @@
   }
 }
 
-.production__tittle {
+.production__title {
   font-size: 17px;
   margin: 0;
-  grid-area: production__tittle;
+  grid-area: production__title;
   color: $black;
   margin-left: 57px;
 
@@ -99,9 +99,7 @@
     min-width: 668px;
   }
 
-  @media (min-width: $desktop-width) {
-
-  }
+  @media (min-width: $desktop-width) {}
 }
 
 .production__button {

@@ -53,12 +53,13 @@
   }
 }
 
-.about-us__tittle {
+.about-us__title {
   font-weight: $font-weight-bold;
   font-size: 25px;
   line-height: 30px;
   margin: 0;
   padding: 36px 0 28px;
+  color: $black;
 
   @media (min-width: $tablet-width) {
     font-size: 43px;
@@ -97,6 +98,7 @@
   font-size: 17px;
   line-height: 20px;
   padding-top: 54px;
+  color: $black;
 
   &--like,
   &--manual,

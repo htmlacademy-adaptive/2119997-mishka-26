@@ -6,6 +6,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Мишка</title>
   <link href="css/style.min.css" rel="stylesheet">
+  <link rel="preload" href="./fonts/opensans.woff2" as="font">
+  <link rel="preload" href="./fonts/opensansbold.woff2" as="font">
   <link rel="icon" href="sourse/favicon.ico">
   <link rel="icon" href="img/favicons/icon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="img/favicons/apple-touch-icon.png">
@@ -13,7 +15,7 @@
 </head>
 
 <body class="page__body">
-  <header class="main-header main-header--closed main-header--nojs">
+  <header class="main-header main-header--opened">
     <a class="main-header__logo" href="index.html">
       <picture>
         <source media="(min-width: 1150px)" srcset="img/mishka-logo-desktop.svg">
@@ -63,7 +65,7 @@
   </header>
   <main class="main-container">
     <header class="main-container__header hero hero--index">
-      <h1 class="hero__tittle hero__tittle--index"><span class="visually-hidden">Интернет-магазин "Мишка"</span>Милые
+      <h1 class="hero__title hero__title--index"><span class="visually-hidden">Интернет-магазин "Мишка"</span>Милые
         штуки ручной <br> работы для дома</h1>
     </header>
     <section class="main-catalog">
@@ -89,8 +91,8 @@
     </section>
     <section class="product-hit">
       <div class="product-hit__wrapper">
-        <h2 class="product-hit__tittle">Вязаные корзинки</h2>
-        <p class="product-hit__legend">Товар<br> недели</p>
+        <h2 class="product-hit__title">Вязаные корзинки</h2>
+        <p class="product-hit__legend">Товар недели</p>
         <p class="product-hit__desc">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках и трёх
           размерах.</p>
         <table class="product-hit__table">
@@ -132,7 +134,7 @@
     </section>
     <section class="about-us">
       <div class="about-us__wrapper">
-        <h2 class="about-us__tittle">Коротко о нас:</h2>
+        <h2 class="about-us__title">Коротко о нас:</h2>
         <ul class="about-us__list">
           <li class="about-us__item about-us__item--materials">
             <svg width="33" height="38">
@@ -175,13 +177,14 @@
     </section>
     <section class="reviews">
       <div class="reviews__wrapper">
-        <h2 class="reviews__tittle">Отзывы</h2>
+        <h2 class="reviews__title">Отзывы</h2>
         <div class="reviews__list">
           <blockquote class="reviews__item">
             <div class="reviews__autor-info">
-              <p class="reviews__text">Я молодая мама, но всё равно фотографии не набирали и близко такого количества
-                лайков, как <br>у популярных инстамамочек. <br> В отчаянии, я накупила аксессуаров и игрушек в Мишке, <br>и мои
-                фотографии сразу стали более стильными, а также набирают больше лайков!</p>
+              <p class="reviews__text">Я&nbsp;молодая мама, но&nbsp;всё равно фотографии не&nbsp;набирали и&nbsp;близко
+                такого количества лайков, как у&nbsp;популярных инстамамочек. В&nbsp;отчаянии, я&nbsp;накупила
+                аксессуаров и&nbsp;игрушек в&nbsp;Мишке, и&nbsp;мои фотографии сразу стали более стильными, а&nbsp;также
+                набирают больше лайков!</p>
               <cite class="reviews__autor-name">Анастасия Красильникова</cite>
               <a class="reviews__autor-email" href="malito:@misssssiskras">@misssssiskras</a>
             </div>
@@ -226,7 +229,7 @@
     </section>
     <section class="contacts">
       <div class="contacts__wrapper">
-        <h2 class="contacts__tittle">Контакты</h2>
+        <h2 class="contacts__title">Контакты</h2>
         <dl class="contacts__list">
           <div class="contacts__item">
             <dt class="contacts__name">

@@ -9,8 +9,8 @@
   @media (min-width: $tablet-width) {
     display: grid;
     grid-template-columns: 50% 50%;
-    grid-template-areas:  "logo user-list"
-                          "site-list delivery";
+    grid-template-areas: "logo user-list"
+      "site-list delivery";
     width: 768px;
     padding: 0 50px;
     margin: 0 auto;
@@ -19,8 +19,8 @@
   @media (min-width: $desktop-width) {
     display: grid;
     grid-template-columns: 40% 20% 40%;
-    grid-template-areas:  "site-list logo user-list"
-                          "trade-list trade-list delivery";
+    grid-template-areas: "site-list logo user-list"
+      "trade-list trade-list delivery";
     width: 1150px;
     padding: 0 50px;
     margin: 0 auto;
@@ -31,7 +31,7 @@
   display: block;
   grid-area: logo;
   text-align: center;
-  margin: 22px 0;
+  margin: 21px 0 17px;
 
   @media (min-width: $tablet-width) {
     text-align: start;
@@ -57,6 +57,7 @@
   }
 
   @media (min-width: $tablet-width) {
+    display: block;
     width: 113px;
     height: 46px;
   }
@@ -82,7 +83,7 @@
   }
 }
 
-.main-header--closed .main-header__burger-menu::before {
+.main-header__burger-menu::before {
   content: "";
   position: absolute;
   top: 32px;
@@ -92,12 +93,17 @@
   transition: 0.3s;
   background-color: $black;
   box-shadow: 0 6px 0 0 $black,
-              0 12px 0 0 $black;
+    0 12px 0 0 $black;
 }
 
-@media (max-width: $mobile-width) {
+@media (max-width: $tablet-width) {
+
   .main-header--closed .site-list,
   .main-header--closed .user-list {
+    display: none;
+  }
+
+  .main-header--opened .main-header__list {
     display: none;
   }
 
@@ -112,6 +118,7 @@
 }
 
 .main-header--opened .main-header__burger-menu {
+
   &::before,
   &::after {
     content: "";
@@ -125,6 +132,7 @@
 
   &::before {
     transform: rotate(45deg);
+    box-shadow: none;
   }
 
   &::after {
@@ -136,7 +144,10 @@
   margin: 0;
   padding: 0;
   list-style: none;
+  display: none;
 }
+
+
 
 
 .main-header__delivery {
