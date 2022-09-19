@@ -15,7 +15,7 @@
 </head>
 
 <body class="page__body">
-  <header class="main-header">
+  <header class="main-header main-header--nojs">
     <a class="main-header__logo" href="index.html">
       <picture>
         <source media="(min-width: 1150px)" srcset="img/mishka-logo-desktop.svg">
@@ -23,7 +23,7 @@
         <img src="img/mishka-logo-mobile.svg" width="86" height="35" alt="Мишка">
       </picture>
     </a>
-    <button class="main-header__burger-menu main-header__burger-menu--closed" type="button">
+    <button class="main-header__burger-menu" type="button">
       <span class="visually-hidden">Открыть меню</span>
     </button>
     <ul class="main-header__list site-list">
@@ -224,6 +224,22 @@
       </div>
     </div>
   </footer>
+  <div class="modal modal--close">
+    <div class="modal__order">
+      <form class="modal__form" action="https://echo.htmlacademy.ru/">
+        <h2 class="modal__order-title">Добавить<br> в корзину</h2>
+        <span class="modal__order-select">Выберите размер:</span>
+        <div class="modal__order-group">
+          <input class="modal__order-input" type="radio" name="size" id="modal-1" value="S" checked>
+          <label class="modal__order-label" for="modal-1">S</label>
+          <input class="modal__order-input" type="radio" name="size" id="modal-2" value="M">
+          <label class="modal__order-label" for="modal-2">M</label>
+          <input class="modal__order-input" type="radio" name="size" id="modal-3" value="L">
+          <label class="modal__order-label" for="modal-3">L</label>
+        </div>
+        <button class="button button--modal" type="submit">Добавить</button>
+      </form>
+    </div>
 </body>
 
 </html>

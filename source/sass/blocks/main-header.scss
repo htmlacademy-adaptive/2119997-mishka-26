@@ -111,10 +111,27 @@
     display: none;
   }
 
-  .main-header--nojs .site-list,
+  .main-header--nojs .site-list {
+    display: block;
+    position: absolute;
+    background-color: $white;
+    top: 101%;
+    left: 0;
+    width: 100%;
+    z-index: 10;
+  }
+
   .main-header--nojs .user-list {
     display: block;
+    position: absolute;
+    background-color: $white;
+    top: 302%;
+    left: 0;
+    width: 100%;
+    z-index: 10;
   }
+
+
 }
 
 .main-header--opened .main-header__burger-menu {
@@ -144,7 +161,6 @@
   margin: 0;
   padding: 0;
   list-style: none;
-  display: none;
 }
 
 
