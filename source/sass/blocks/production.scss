@@ -1,17 +1,19 @@
 .production {
   width: 320px;
   margin: 0 auto;
-  margin-bottom: 58px;
+  margin-bottom: 59px;
   padding: 0 30px;
 
   @media (min-width: $tablet-width) {
     width: 768px;
     padding: 0 50px;
+    margin-bottom: 63px;
   }
 
   @media (min-width: $desktop-width) {
     width: 1150px;
     padding: 0 50px;
+    margin-bottom: 104px;
   }
 }
 
@@ -31,44 +33,58 @@
   @media (min-width: $desktop-width) {
     display: grid;
     grid-template-columns: 682px 367px;
-    grid-template-areas:  "video production__tittle"
-                          "video production__descripion"
-                          "video production__descripion";
+    grid-template-areas: "video production__title"
+      "video production__descripion"
+      "video production__descripion";
   }
 }
 
-.production__tittle-wrapper {
+.production__title-wrapper {
+  position: relative;
   display: flex;
   align-items: center;
-  padding: 22px 34px 26px;
+  padding: 20px 33px 29px;
 
   @media (min-width: $tablet-width) {
-    padding: 39px 42px 25px;
+    padding: 40px 49px 25px;
   }
 
   @media (min-width: $desktop-width) {
     flex-direction: column;
     align-items: flex-start;
-    padding: 47px 0 27px 79px;
+    padding: 95px 49px 22px 79px;
   }
 }
 
 .production__title-img {
-  margin-right: 25px;
+  position: absolute;
+  width: 32px;
+  height: 22px;
+
+  @media (min-width: $tablet-width) {
+    top: 38px;
+    left: 41px;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: 27%;
+    left: 22%;
+  }
 }
 
-.production__tittle {
+.production__title {
   font-size: 17px;
   margin: 0;
-  grid-area: production__tittle;
+  grid-area: production__title;
   color: $black;
+  margin-left: 57px;
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
   }
 
   @media (min-width: $desktop-width) {
-    margin-top: 27px;
+    margin: 0;
   }
 }
 
@@ -83,9 +99,7 @@
     min-width: 668px;
   }
 
-  @media (min-width: $desktop-width) {
-
-  }
+  @media (min-width: $desktop-width) {}
 }
 
 .production__button {
@@ -94,7 +108,7 @@
   border: none;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -47%);
   cursor: pointer;
 
   &:hover {
@@ -110,7 +124,7 @@
 
 .production__descripion {
   grid-area: production__descripion;
-  padding: 35px 33px 33px;
+  padding: 36px 32px 33px;
 
   @media (min-width: $tablet-width) {
     display: flex;
@@ -120,7 +134,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding: 0 36px 60px 79px;
+    padding: 0 57px 60px 80px;
   }
 }
 

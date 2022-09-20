@@ -1,26 +1,28 @@
 .user-list {
-  grid-area: user-list;
+
 
   @media (min-width: $tablet-width) {
-    display: flex;
-    justify-content: end;
-    gap: 31px;
+    display: grid;
+    grid-area: user-list;
+    justify-content: flex-end;
+    grid-template-columns: 83px 265px;
+  }
 
-    @media (min-width: $desktop-width) {
-      display: flex;
-      justify-content: end;
-    }
+  @media (min-width: $desktop-width) {
+    grid-template-columns: 83px 267px;
+
   }
 }
 
 .user-list__item {
-  padding: 27px 0 27px 46px;
+  padding: 27px 0 27px 76px;
   border-top: 1px solid $gray;
   position: relative;
 
   @media (min-width: $tablet-width) {
-    padding: 32px 0 32px 46px;
-    border: none;
+    padding: 32px 0 32px 82px;
+    border-top: none;
+    border-left: 1px solid rgba(0, 0, 0, 0.1);
   }
 }
 
@@ -39,7 +41,7 @@
   }
 
   @media (min-width: $tablet-width) {
-    font-size: 15px;
+    font-size: 17px;
   }
 
   @media (min-width: $desktop-width) {
@@ -57,20 +59,28 @@
   position: absolute;
   opacity: 0.2;
   top: 50%;
-  left: 0;
+  left: 32px;
   transform: translateY(-50%);
   width: 18px;
   height: 18px;
+
+  @media (min-width: $tablet-width) {
+    left: 32px;
+  }
 }
 
 .user-list__link--cart svg {
   position: absolute;
   opacity: 0.2;
   top: 50%;
-  left: 0;
+  left: 30px;
   transform: translateY(-50%);
   width: 21px;
   height: 18px;
+
+  @media (min-width: $tablet-width) {
+    left: 31px;
+  }
 }
 
 .user-list__link--search:hover svg,

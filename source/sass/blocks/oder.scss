@@ -10,29 +10,34 @@
 
   @media (min-width: $desktop-width) {
     width: 1150px;
-    padding: 0 50px;
+    padding: 0 225px;
   }
 }
 
 .oder__text {
   font-size: 13px;
-  margin: 13px 0 29px;
+  margin: 17px 0 29px;
 
   @media (min-width: $tablet-width) {
     font-size: 17px;
     line-height: 30px;
-    margin: 54px 0 63px;
+    margin-bottom: 63px;
+  }
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 13px;
   }
 }
 
 .oder__container {
-  padding: 50px 0;
+
 
   @media (min-width: $tablet-width) {
+    padding: 50px 0;
 
     &--gray {
       background-color: $gray;
-      padding: 50px 0;
+      padding: 50px;
     }
   }
 
@@ -43,8 +48,42 @@
   margin: 0;
   border: none;
 
+  &--fio {
+    margin-bottom: 35px;
+  }
+
+  &--phone {
+    margin-bottom: 34px;
+  }
+
+  &--email {
+    margin-bottom: 35px;
+  }
+
+  &--note {
+    margin-bottom: 11px;
+  }
+
   @media (min-width: $tablet-width) {
 
+    &--fio,
+    &--email {
+      margin-bottom: 0;
+    }
+
+    &--phone {
+      margin-bottom: 24px;
+    }
+
+    &--note {
+      margin-bottom: 3px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    &--note {
+      margin-bottom: 0px;
+    }
   }
 }
 
@@ -55,14 +94,13 @@
 
   @media (min-width: $tablet-width) {
     display: flex;
-    gap: 120px;
     width: 768px;
     padding: 0 50px;
   }
 
   @media (min-width: $desktop-width) {
     width: 1150px;
-    padding: 0 50px;
+    padding: 0 225px 0 112px;
   }
 }
 
@@ -70,51 +108,139 @@
   display: flex;
   flex-direction: column;
   flex-grow: 1;
+}
+
+.oder__title {
+  position: relative;
+  color: $secondary-color;
+  font-weight: $font-weight-bold;
+  text-transform: uppercase;
+  line-height: 16px;
+  margin-bottom: 32px;
+  padding: 0;
+
+  &::after {
+    position: absolute;
+    content: "";
+    top: 7px;
+    left: 60px;
+    right: 0;
+    height: 1px;
+    background-color: $secondary-color;
+
+    @media (min-width: $tablet-width) {
+      display: none
+    }
+  }
+
+  &--color {
+    margin-bottom: 25px;
+  }
+
+  &--fio {
+    margin-bottom: 31px;
+  }
+
+  &--phone {
+    margin-bottom: 6px;
+  }
+
+  &--email {
+    margin-bottom: 5px;
+  }
+
+  &--note {
+    margin-bottom: 22px;
+  }
+
+  @media (min-width: $tablet-width) {
+    margin-top: 18px;
+    margin-right: 132px;
+    margin-bottom: 0;
+
+    &--color {
+      margin-right: 123px;
+    }
+
+    &--fio {
+      margin-right: 125px;
+    }
+
+    &--email {
+      margin-right: 110px;
+    }
+
+    &--note {
+      margin-right: 102px;
+    }
+  }
 
   @media (min-width: $desktop-width) {
-    // padding-right: 173px;
+    margin-right: 77px;
+
+    &--color {
+      margin-right: 69px;
+    }
+
+    &--fio {
+      margin-right: 74px;
+    }
+
+    &--email {
+      margin-right: 55px;
+    }
+
+    &--note {
+      margin-right: 50px;
+    }
   }
 }
 
-.oder__tittle {
-  color: $secondary-color;
-  text-transform: uppercase;
-  line-height: 16px;
-  margin-bottom: 30px;
+.oder__tittle--email::after {
+  left: 78px;
 }
 
 .oder__list {
   display: grid;
-  row-gap: 13px;
+  row-gap: 15px;
   padding: 0;
   margin: 0;
   list-style-type: none;
+  margin-bottom: 33px;
 
   &--color {
     row-gap: 23px;
   }
 
   @media (min-width: $tablet-width) {
+    gap: 23px;
+    margin-bottom: 0;
 
     &--color {
       grid-template-columns: repeat(2, 250px);
       row-gap: 24px;
+      column-gap: 12px;
     }
   }
 
   @media (min-width: $desktop-width) {
+    gap: 22px;
 
     &--color {
       grid-template-columns: repeat(3, 240px);
+      row-gap: 24px;
+      column-gap: 22px;
     }
   }
 }
+
 .oder__item {
   font-weight: $font-weight-bold;
   line-height: 18px;
   color: $black;
 
   @media (min-width: $tablet-width) {
+    font-size: 19px;
 
     &--color {
       margin-bottom: 0px;
@@ -129,6 +255,8 @@
   margin-bottom: 30px;
 
   @media (min-width: $tablet-width) {
+    font-size: 17px;
+    line-height: 30px;
     margin-bottom: 0;
   }
 }
@@ -218,6 +346,10 @@
 
   @media (min-width: $desktop-width) {
     width: 1150px;
-    padding: 0 50px;
+    padding: 0 225px;
   }
+}
+
+.oder__button-wrapper {
+  width: 230px;
 }

@@ -37,7 +37,7 @@ const html = () => {
 }
 
 //Scripts
-const jsMinimizer = () => {
+const scripts = () => {
   return gulp.src('source/js/*.js')
     .pipe(terser())
     .pipe(gulp.dest('build/js'));
@@ -126,7 +126,7 @@ const reload = (done) => {
 
 const watcher = () => {
   gulp.watch('source/sass/**/*.scss', gulp.series(styles));
-  // gulp.watch('source/js/script.js', gulp.series(scripts));
+  gulp.watch('source/js/*.js', gulp.series(scripts));
   gulp.watch('source/*.html', gulp.series(html, reload));
 }
 
@@ -140,6 +140,7 @@ export const build = gulp.series(
   gulp.parallel(
     styles,
     html,
+    scripts,
     svg,
     sprite,
     createWebp
@@ -155,6 +156,7 @@ export default gulp.series(
   gulp.parallel(
     styles,
     html,
+    scripts,
     svg,
     sprite,
     createWebp

@@ -3,10 +3,11 @@
   grid-area: trade-list;
 
   @media (min-width: $desktop-width) {
-    display: flex;
-    justify-content: start;
+    display: grid;
+    grid-auto-flow: column;
+    justify-content: flex-start;
     position: absolute;
-    gap: 42px;
+    gap: 62px;
     z-index: 1;
   }
 }
@@ -36,7 +37,5 @@
     font-size: 15px;
   }
 
-  @media (min-width: $desktop-width) {
-    font-size: 17px;
-  }
+  @media (min-width: $desktop-width) {}
 }

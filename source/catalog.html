@@ -6,6 +6,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Мишка</title>
   <link href="css/style.min.css" rel="stylesheet">
+  <link rel="preload" href="./fonts/opensans.woff2" as="font">
+  <link rel="preload" href="./fonts/opensansbold.woff2" as="font">
   <link rel="icon" href="favicon.ico">
   <link rel="icon" href="img/favicons/icon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="img/favicons/apple-touch-icon.png">
@@ -13,7 +15,7 @@
 </head>
 
 <body class="page__body">
-  <header class="main-header">
+  <header class="main-header main-header--nojs">
     <a class="main-header__logo" href="index.html">
       <picture>
         <source media="(min-width: 1150px)" srcset="img/mishka-logo-desktop.svg">
@@ -21,7 +23,7 @@
         <img src="img/mishka-logo-mobile.svg" width="86" height="35" alt="Мишка">
       </picture>
     </a>
-    <button class="main-header__burger-menu main-header__burger-menu--closed" type="button">
+    <button class="main-header__burger-menu" type="button">
       <span class="visually-hidden">Открыть меню</span>
     </button>
     <ul class="main-header__list site-list">
@@ -63,7 +65,7 @@
   </header>
   <main class="catalog-container">
     <header class="catalog-container__header hero">
-      <h1 class="hero__tittle">Каталог товаров</h1>
+      <h1 class="hero__title">Каталог товаров</h1>
     </header>
     <section class="catalog-container__cards product-card">
       <h2 class="visually-hidden">Список товаров</h2>
@@ -80,8 +82,8 @@
             </picture>
           </a>
           <div class="poduct-card__content">
-            <h3 class="product-card__tittle">
-              <a class="product-card__tittle-link" href="#">Зайчик-попрыгайчик</a>
+            <h3 class="product-card__title">
+              <a class="product-card__title-link" href="#">Зайчик-попрыгайчик</a>
             </h3>
             <p class="product-card__description">Рост 30 см, вес 200 г</p>
             <div class="product-card__buy">
@@ -107,8 +109,8 @@
             </picture>
           </a>
           <div class="poduct-card__content">
-            <h3 class="product-card__tittle">
-              <a class="product-card__tittle-link" href="#">Корзинка для белья</a>
+            <h3 class="product-card__title">
+              <a class="product-card__title-link" href="#">Корзинка для белья</a>
             </h3>
             <p class="product-card__description">Диаметр 15 см, высота 10 см</p>
             <div class="product-card__buy">
@@ -134,8 +136,8 @@
             </picture>
           </a>
           <div class="poduct-card__content">
-            <h3 class="product-card__tittle">
-              <a class="product-card__tittle-link" href="#">Большая корзинка <br> для игрушек</a>
+            <h3 class="product-card__title">
+              <a class="product-card__title-link" href="#">Большая корзинка <br> для игрушек</a>
             </h3>
             <p class="product-card__description">Диаметр 30 см, высота 30 см</p>
             <div class="product-card__buy">
@@ -153,11 +155,11 @@
     </section>
     <section class="production">
       <div class="production__wrapper">
-        <div class="production__tittle-wrapper">
+        <div class="production__title-wrapper">
           <svg class="production__title-img" width="32" height="22">
             <use xlink:href="img/icon/sprite.svg#icon-video"></use>
           </svg>
-          <h2 class="production__tittle">Процесс производства</h2>
+          <h2 class="production__title">Процесс производства</h2>
         </div>
         <div class="production__video">
           <picture>
@@ -222,6 +224,22 @@
       </div>
     </div>
   </footer>
+  <div class="modal modal--close">
+    <div class="modal__order">
+      <form class="modal__form" action="https://echo.htmlacademy.ru/">
+        <h2 class="modal__order-title">Добавить<br> в корзину</h2>
+        <span class="modal__order-select">Выберите размер:</span>
+        <div class="modal__order-group">
+          <input class="modal__order-input" type="radio" name="size" id="modal-1" value="S" checked>
+          <label class="modal__order-label" for="modal-1">S</label>
+          <input class="modal__order-input" type="radio" name="size" id="modal-2" value="M">
+          <label class="modal__order-label" for="modal-2">M</label>
+          <input class="modal__order-input" type="radio" name="size" id="modal-3" value="L">
+          <label class="modal__order-label" for="modal-3">L</label>
+        </div>
+        <button class="button button--modal" type="submit">Добавить</button>
+      </form>
+    </div>
 </body>
 
 </html>

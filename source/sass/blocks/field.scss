@@ -1,5 +1,5 @@
 .field {
-  display: flow-root;
+  display: flex;
   flex-direction: column;
   flex-grow: 1;
   margin: 0;
@@ -13,6 +13,11 @@
     flex-direction: row;
     align-items: center;
     margin-bottom: 24px;
+
+    &--phone,
+    &--email {
+      display: flow-root;
+    }
   }
 }
 
@@ -23,12 +28,58 @@
   display: flex;
   position: relative;
 
-  & svg {
-    right: 0;
-    top: 0;
-    position: absolute;
-    transform: translate(-50%, 50%);
-    opacity: 0.2;
+  @media (min-width: $tablet-width) {
+    font-size: 19px;
+    margin-right: 26px;
+
+    &--phone,
+    &--email {
+      margin-right: 0;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    margin-right: 24px;
+
+    &--phone,
+    &--email {
+      margin-right: 0;
+    }
+  }
+}
+
+.field__label--phone svg {
+  right: -5px;
+  top: -3px;
+  position: absolute;
+  transform: translate(-50%, 50%);
+  opacity: 0.2;
+
+  @media (min-width: $tablet-width) {
+    right: 14px;
+    top: -1px;
+  }
+
+  @media (min-width: $tablet-width) {
+    right: -4px;
+  }
+}
+
+.field__label--email svg {
+  right: -13px;
+  top: 5px;
+  position: absolute;
+  transform: translate(-50%, 50%);
+  opacity: 0.2;
+
+  @media (min-width: $tablet-width) {
+    right: 7px;
+    top: 5px;
+  }
+
+  @media (min-width: $tablet-width) {
+    right: -12px;
+    top: 5px;
   }
 }
 
@@ -38,7 +89,7 @@
   line-height: 18px;
   color: $main-color;
   width: 100%;
-  padding: 17px 23px 17px 0;
+  padding: 16px 23px 15px 0;
   border: none;
   outline: none;
   background-color: transparent;
@@ -53,6 +104,11 @@
   &:focus {
     border-color: $secondary-color;
     transition: 250ms;
+  }
+
+  @media (min-width:$tablet-width) {
+    font-size: 19px;
+    padding: 10px 23px 14px 18px;
   }
 }
 
@@ -69,6 +125,7 @@
   line-height: 18px;
   width: 100%;
   padding: 17px;
+  padding-bottom: 13px;
   outline: 0;
   border: 2px solid $black;
 
@@ -80,5 +137,10 @@
   &:focus {
     border-color: $secondary-color;
     transition: 250ms;
+  }
+
+  @media (min-width:$tablet-width) {
+    font-size: 19px;
+    padding: 14px 17px 16px 14px;
   }
 }

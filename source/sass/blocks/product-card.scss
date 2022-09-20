@@ -3,17 +3,20 @@
   margin: 0 auto;
   padding: 0 30px;
   margin-bottom: 30px;
+  margin-top: 30px;
 
   @media (min-width: $tablet-width) {
     width: 768px;
     padding: 0 50px;
-    margin-bottom: 53px;
+    margin-top: 80px;
+    margin-bottom: 50px;
   }
 
   @media (min-width: $desktop-width) {
     width: 1150px;
     padding: 0 50px;
-    margin-bottom: 57px;
+    margin-top: 130px;
+    margin-bottom: 53px;
   }
 }
 
@@ -24,17 +27,20 @@
   padding: 0;
   list-style-type: none;
 
-  @media (min-width: $tablet-width) {}
+  @media (min-width: $tablet-width) {
+    gap: 53px;
+  }
 
   @media (min-width: $desktop-width) {
     display: grid;
-    grid-template-columns: repeat(3, 316px);
-    gap: 51px;
+    grid-template-columns: repeat(3, 317px);
+    gap: 50px;
   }
 }
 
 .product-card__item {
   border: 1px solid $gray;
+  line-height: 0;
 
   &:hover {
     box-shadow: 0 6px 10px 0px rgba(0, 0, 0, 0.1);
@@ -46,6 +52,7 @@
 
   @media (min-width: $tablet-width) {
     display: flex;
+
   }
 
   @media (min-width: $desktop-width) {
@@ -56,27 +63,26 @@
 .product-card__link {
 
   @media (min-width: $desktop-width) {
-    min-height: 462px;
     display: block;
   }
 }
 
 .poduct-card__content {
-  padding: 28px;
+  padding: 27px;
 
   @media (min-width: $tablet-width) {
-    padding: 25px 34px;
+    padding: 28px 33px;
     display: flex;
     flex-direction: column;
     flex-grow: 1;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 27px 34px;
+    padding: 29px 27px;
   }
 }
 
-.product-card__tittle-link {
+.product-card__title-link {
   display: block;
   font-size: 17px;
   font-weight: $font-weight-bold;
@@ -98,7 +104,7 @@
   }
 }
 
-.product-card__tittle {
+.product-card__title {
   margin: 0;
 }
 
@@ -106,11 +112,12 @@
   font-size: 13px;
   line-height: 30px;
   margin: 0;
-  margin-bottom: 17px;
+  margin-bottom: 18px;
+  margin-top: 6px;
 
   @media (min-width: $tablet-width) {
     font-size: 15px;
-    margin-bottom: 172px;
+    margin-bottom: auto;
   }
 
   @media (min-width: $desktop-width) {
@@ -123,7 +130,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-top: 22px;
+  padding-top: 27px;
 }
 
 .product-card__price {
@@ -142,8 +149,11 @@
 }
 
 .product-card__button svg {
+  width: 21px;
+  height: 18px;
   fill: $black;
   opacity: 0.2;
+
 
   &:hover {
     opacity: 1;
