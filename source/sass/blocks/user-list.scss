@@ -83,6 +83,12 @@
   }
 }
 
+.user-list__link--search:focus-visible svg,
+.user-list__link--cart:focus-visible svg {
+  opacity: 1;
+  outline: 2px solid $secondary-color;
+}
+
 .user-list__link--search:hover svg,
 .user-list__link--cart:hover svg {
   fill: $secondary-color;
