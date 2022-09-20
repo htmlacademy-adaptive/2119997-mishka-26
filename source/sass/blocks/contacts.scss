@@ -176,9 +176,15 @@
 .contacts__map iframe {
   border: none;
   display: block;
+  height: 457px;
+  width: 260px;
 
   @media (min-width: $tablet-width) {
-    height: 457px;
+    width: 100%;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 457px;
   }
 }
 
