@@ -43,16 +43,15 @@
   line-height: 0;
 
   &:hover {
-    box-shadow: 0 6px 10px 0px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.1);
   }
 
   &:active {
-    box-shadow: 0 3px 5px 0px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.1);
   }
 
   @media (min-width: $tablet-width) {
     display: flex;
-
   }
 
   @media (min-width: $desktop-width) {
@@ -61,13 +60,12 @@
 }
 
 .product-card__link {
-
   @media (min-width: $desktop-width) {
     display: block;
   }
 }
 
-.poduct-card__content {
+.product-card__content {
   padding: 27px;
 
   @media (min-width: $tablet-width) {

@@ -26,7 +26,7 @@
   z-index: 2;
   padding-bottom: 46px;
 
-  @media (min-width:$tablet-width) {
+  @media (min-width: $tablet-width) {
     padding: 46px 106px;
     width: 568px;
   }
@@ -40,7 +40,7 @@
   margin: 28px 0 14px 0;
   color: $black;
 
-  @media (min-width:$tablet-width) {
+  @media (min-width: $tablet-width) {
     font-size: 30px;
     line-height: 57px;
     margin: 0;
@@ -55,7 +55,7 @@
   font-size: 15px;
   line-height: 30px;
 
-  @media (min-width:$tablet-width) {
+  @media (min-width: $tablet-width) {
     font-size: 17px;
   }
 }
@@ -84,7 +84,7 @@
     border: 2px solid rgba(98, 209, 186, 1);
   }
 
-  @media (min-width:$tablet-width) {
+  @media (min-width: $tablet-width) {
     min-width: 112px;
   }
 }
@@ -92,7 +92,7 @@
 .modal__order-input {
   display: none;
 
-  &:checked+.modal__order-label {
+  &:checked + .modal__order-label {
     border-color: #63d1bb;
   }
 }

@@ -97,7 +97,6 @@
 }
 
 @media (max-width: $tablet-width) {
-
   .main-header--closed .site-list,
   .main-header--closed .user-list {
     display: none;
@@ -130,12 +129,9 @@
     width: 100%;
     z-index: 10;
   }
-
-
 }
 
 .main-header--opened .main-header__burger-menu {
-
   &::before,
   &::after {
     content: "";
@@ -162,9 +158,6 @@
   padding: 0;
   list-style: none;
 }
-
-
-
 
 .main-header__delivery {
   display: none;
