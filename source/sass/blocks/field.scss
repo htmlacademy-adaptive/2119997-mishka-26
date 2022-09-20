@@ -106,14 +106,14 @@
     transition: 250ms;
   }
 
-  @media (min-width:$tablet-width) {
+  @media (min-width: $tablet-width) {
     font-size: 19px;
     padding: 10px 23px 14px 18px;
   }
 }
 
-.field__input:hover+svg,
-.field__input:focus+svg {
+.field__input:hover + svg,
+.field__input:focus + svg {
   fill: #62d1ba;
   opacity: 1;
   transition: 250ms;
@@ -139,7 +139,7 @@
     transition: 250ms;
   }
 
-  @media (min-width:$tablet-width) {
+  @media (min-width: $tablet-width) {
     font-size: 19px;
     padding: 14px 17px 16px 14px;
   }

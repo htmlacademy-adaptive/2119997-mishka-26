@@ -1,5 +1,4 @@
 .reviews {
-
   @media (min-width: $tablet-width) {
     background-image: url("../img/background/review@1x.jpg");
     background-repeat: no-repeat;
@@ -31,7 +30,6 @@
     grid-template-areas: "reviews__title reviews__write"
       "reviews__list reviews__list";
     align-items: baseline;
-
   }
 
   @media (min-width: $desktop-width) {
@@ -71,7 +69,6 @@
   @media (min-width: $desktop-width) {
     margin-bottom: 49px;
   }
-
 }
 
 .reviews__item {
@@ -166,7 +163,6 @@
 }
 
 .reviews__button svg {
-
   &:hover {
     opacity: 0.6;
   }

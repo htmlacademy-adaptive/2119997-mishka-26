@@ -29,7 +29,6 @@
     }
 
     &--index {
-
       &::after {
         bottom: -8px;
       }
@@ -45,7 +44,6 @@
   }
 
   @media (min-width: $desktop-width) {
-
     &::after {
       background-image: url("../img/hero-zigzag-fill-desktop.svg");
       height: 34px;
@@ -54,7 +52,6 @@
     }
 
     &--index {
-
       &::after {
         bottom: -19px;
         left: -31px;

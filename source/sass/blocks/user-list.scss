@@ -1,6 +1,4 @@
 .user-list {
-
-
   @media (min-width: $tablet-width) {
     display: grid;
     grid-area: user-list;
@@ -10,7 +8,6 @@
 
   @media (min-width: $desktop-width) {
     grid-template-columns: 83px 267px;
-
   }
 }
 

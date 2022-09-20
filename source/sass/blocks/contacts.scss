@@ -16,7 +16,7 @@
 
     &::before {
       background-image: url("../img/zigzag-line-tablet.svg");
-      background-position: -24px 0px;
+      background-position: -24px 0;
       height: 17px;
       margin-top: -42px;
     }
@@ -29,7 +29,7 @@
       background-image: url("../img/zigzag-line-desktop.svg");
       height: 23px;
       margin-top: 3px;
-      background-position: 20px 0px;
+      background-position: 20px 0;
     }
   }
 }

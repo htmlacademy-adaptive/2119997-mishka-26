@@ -30,8 +30,6 @@
 }
 
 .oder__container {
-
-
   @media (min-width: $tablet-width) {
     padding: 50px 0;
 
@@ -40,7 +38,6 @@
       padding: 50px;
     }
   }
-
 }
 
 .oder__group {
@@ -65,7 +62,6 @@
   }
 
   @media (min-width: $tablet-width) {
-
     &--fio,
     &--email {
       margin-bottom: 0;
@@ -82,7 +78,7 @@
 
   @media (min-width: $desktop-width) {
     &--note {
-      margin-bottom: 0px;
+      margin-bottom: 0;
     }
   }
 }
@@ -129,7 +125,7 @@
     background-color: $secondary-color;
 
     @media (min-width: $tablet-width) {
-      display: none
+      display: none;
     }
   }
 
@@ -243,7 +239,7 @@
     font-size: 19px;
 
     &--color {
-      margin-bottom: 0px;
+      margin-bottom: 0;
     }
   }
 }
@@ -318,7 +314,7 @@
   }
 }
 
-.control__input[type="radio"]:checked+.control__mark::before {
+.control__input[type="radio"]:checked + .control__mark::before {
   position: absolute;
   content: "";
   width: 16px;
@@ -335,7 +331,7 @@
   }
 }
 
-.control__input[type="checkbox"]:checked+.control__mark {
+.control__input[type="checkbox"]:checked + .control__mark {
   background-image: url("../img/icon-cheked.svg");
   background-position: center;
   background-size: 23px 16px;
